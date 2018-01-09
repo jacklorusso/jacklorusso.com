@@ -1,0 +1,29 @@
+{
+  "name": "jacklorusso.com",
+  "description": "Jack Lo Russo is a designer & developer from Sydney",
+  "license": "MIT",
+  "scripts": {
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "format": "prettier --write 'src/**/*.+(js|css|md)'"
+  },
+  "dependencies": {
+    "gatsby": "^1.9.145",
+    "gatsby-link": "^1.6.32",
+    "gatsby-plugin-catch-links": "^1.0.14",
+    "gatsby-plugin-preact": "^1.0.14",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-styled-components": "^2.0.4",
+    "gatsby-remark-prismjs": "^1.2.11",
+    "gatsby-remark-smartypants": "^1.4.10",
+    "gatsby-source-filesystem": "^1.5.11",
+    "gatsby-transformer-remark": "^1.7.26",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^2.4.0",
+    "styled-system": "^1.1.1"
+  },
+  "devDependencies": {
+    "prettier": "1.9.2"
+  }
+}
