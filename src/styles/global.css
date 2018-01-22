@@ -48,6 +48,7 @@ p a:focus {
     font-size: 90%;
   }
 }
+
 /*Print only the main section */
 @media print {
   body > *:not(main) {

@@ -4,33 +4,34 @@ import Helmet from "react-helmet";
 
 import "../styles/sanitize.css";
 import "../styles/global.css";
-
 import Layout from "../components/Layout";
 import HomeHero from "../components/HomeHero";
 
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
   return (
-    <Layout>
-      <HomeHero />
-      <ul>
-        {posts
-          .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => {
-            return (
-              <li key={post.id}>
-                <h1>
-                  <Link to={post.frontmatter.path}>
-                    {post.frontmatter.title}
-                  </Link>
-                </h1>
-                <date>{post.frontmatter.date}</date>
-                {/* <p>{post.excerpt}</p> */}
-              </li>
-            );
-          })}
-      </ul>
-    </Layout>
+    <div>
+      <Layout>
+        <HomeHero />
+        <ul>
+          {posts
+            .filter(post => post.node.frontmatter.title.length > 0)
+            .map(({ node: post }) => {
+              return (
+                <li key={post.id}>
+                  <h1>
+                    <Link to={post.frontmatter.path}>
+                      {post.frontmatter.title}
+                    </Link>
+                  </h1>
+                  <date>{post.frontmatter.date}</date>
+                  {/* <p>{post.excerpt}</p> */}
+                </li>
+              );
+            })}
+        </ul>
+      </Layout>
+    </div>
   );
 }
 
