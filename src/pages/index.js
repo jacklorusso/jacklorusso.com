@@ -1,54 +1,23 @@
 import React from "react";
 import Link from "gatsby-link";
-import Helmet from "react-helmet";
+import Chilling from "../images/chilling.svg";
 
-import "../styles/sanitize.css";
-import "../styles/global.css";
-import Layout from "../components/Layout";
-import HomeHero from "../components/HomeHero";
+const IndexPage = () => (
+  <div className="text-center">
+    <img src={Chilling} className="block mx-auto w-1/2" />
+    <h2 className="bg-yellow inline-block my-8 p-3">
+      Hey there! Welcome to your first Gatsby site.
+    </h2>
+    <p className="leading-loose">
+      This is a barebones starter for Gatsby styled using{" "}
+      <a
+        href="https://tailwindcss.com/"
+        className="font-bold no-underline text-grey-darkest"
+      >
+        Tailwind
+      </a>, a utility-first CSS framework.
+    </p>
+  </div>
+);
 
-export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark;
-  return (
-    <div>
-      <Layout>
-        <HomeHero />
-        <ul>
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .map(({ node: post }) => {
-              return (
-                <li key={post.id}>
-                  <h1>
-                    <Link to={post.frontmatter.path}>
-                      {post.frontmatter.title}
-                    </Link>
-                  </h1>
-                  <date>{post.frontmatter.date}</date>
-                  {/* <p>{post.excerpt}</p> */}
-                </li>
-              );
-            })}
-        </ul>
-      </Layout>
-    </div>
-  );
-}
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            path
-          }
-        }
-      }
-    }
-  }
-`;
+export default IndexPage;

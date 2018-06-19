@@ -1,13 +1,13 @@
 import React from "react";
+import Taken from "../images/taken.svg";
 
-import Layout from "../components/Layout.js";
+const NotFoundPage = () => (
+  <div>
+    <img src={Taken} className="block mx-auto w-1/2" />
+    <h2 className="bg-yellow inline-block my-8 p-3">
+      Looks like this page is a ghost that got abducted by aliens...
+    </h2>
+  </div>
+);
 
-const MyComponent = props => {
-  return (
-    <Layout>
-      <h1>404</h1>
-    </Layout>
-  );
-};
-
-export default MyComponent;
+export default NotFoundPage;
