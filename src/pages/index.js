@@ -4,19 +4,10 @@ import Layout from "../components/Layout";
 
 const IndexPage = () => (
   <Layout>
-    <div className="text-center">
-      <h2 className="bg-yellow inline-block my-8 p-3">
-        Hey there! Welcome to your first Gatsby site.
+    <div className="text-left">
+      <h2 className="inline-block my-8 p-3">
+        Jack Lo Russo is a Design Engineer based in Sydney.
       </h2>
-      <p className="leading-loose">
-        This is a barebones starter for Gatsby styled using{" "}
-        <a
-          href="https://tailwindcss.com/"
-          className="font-bold no-underline text-grey-darkest"
-        >
-          Tailwind
-        </a>, a utility-first CSS framework.
-      </p>
     </div>
   </Layout>
 );
