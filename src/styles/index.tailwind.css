@@ -3,3 +3,10 @@
 @tailwind components;
 
 @tailwind utilities;
+
+hr {
+  width: 15%;
+  border: 0;
+  border-top: 3px solid #424242;
+  margin: 2.5em auto 2.3em;
+}

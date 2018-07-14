@@ -12,10 +12,10 @@ const Header = () => {
 
   return (
     <nav className="">
-      <div className="flex flex-wrap items-center justify-between max-w-xl mx-auto p-4 md:p-8">
+      <div className="flex flex-wrap items-center justify-between max-w-xxl mx-auto p-4 md:p-8">
         <Link
           to="/"
-          className="flex items-center no-underline text-grey-darkest"
+          className="flex items-center no-underline text-grey"
         >
           <svg
             className="stroke-current"
@@ -36,7 +36,7 @@ const Header = () => {
         </Link>
 
         <button
-          className="block md:hidden flex items-center px-3 py-2 rounded text-grey-darkest"
+          className="block md:hidden flex items-center px-3 py-2 rounded text-grey"
           onClick={handleClick}
         >
           Menu
@@ -49,14 +49,14 @@ const Header = () => {
           <div className="text-sm">
             <Link
               to="/"
-              className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-grey-darkest"
+              className="block mt-4 md:inline-block md:mt-0 mr-6 no-underline text-grey"
             >
               Home
             </Link>
 
             <Link
               to="/about"
-              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-grey-darkest"
+              className="block md:inline-block mt-4 md:mt-0 mr-6 no-underline text-grey"
             >
               About
             </Link>

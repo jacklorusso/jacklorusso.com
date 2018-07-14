@@ -7,7 +7,7 @@ import Footer from "../Footer";
 import "../../styles/index.css";
 
 const Layout = ({ children }) => (
-  <div className="flex flex-col font-sans min-h-screen text-grey-darkest">
+  <div className="flex flex-col font-sans min-h-screen text-grey">
     <Helmet
       title="Jack Lo Russo"
       meta={[
@@ -16,9 +16,9 @@ const Layout = ({ children }) => (
       ]}
     />
     <Header />
-    <div className="flex flex-col flex-1 md:justify-center max-w-xl mx-auto px-4 py-8 md:p-8 w-full">
+    <main className="flex flex-col flex-1 md:justify-center max-w-xxl mx-auto px-4 py-8 md:p-8 w-full">
       {children}
-    </div>
+    </main>
     <Footer />
   </div>
 );
