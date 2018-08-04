@@ -13,10 +13,7 @@ const Header = () => {
   return (
     <nav className="">
       <div className="flex flex-wrap items-center justify-between max-w-xxl mx-auto p-4 md:p-8">
-        <Link
-          to="/"
-          className="flex items-center no-underline text-grey"
-        >
+        <Link to="/" className="flex items-center no-underline text-grey">
           <svg
             className="stroke-current"
             xmlns="http://www.w3.org/2000/svg"

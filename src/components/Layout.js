@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
-import Header from "../Header";
-import Footer from "../Footer";
-import "../../styles/index.css";
+import Header from "./Header";
+import Footer from "./Footer";
+import "../styles/index.css";
 
 const Layout = ({ children }) => (
   <div className="flex flex-col font-sans min-h-screen text-grey">
