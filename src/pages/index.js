@@ -9,7 +9,7 @@ const IndexPage = () => (
     <section className="m-10 h-64">
       <h1 className="md:m-10 text-3xl md:text-4xl font-medium leading-normal text-center">
         Jack Lo Russo is a Design Engineer based in Sydney, but he's{" "}
-        <A href="#">currently in Greece.</A>
+        <A href="#">currently in Turkey.</A>
       </h1>
     </section>
     <section className="my-8">
