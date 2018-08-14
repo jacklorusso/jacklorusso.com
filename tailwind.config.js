@@ -28,6 +28,41 @@ View the full documentation at https://tailwindcss.com.
 
 /*
 |-------------------------------------------------------------------------------
+| Modular Scale (Perfect Fourth)             https://tailwindcss.com/docs/colors
+|-------------------------------------------------------------------------------
+|
+| Describe the scale here
+|
+*/
+
+let modularScale = {
+  p16: "99.376rem",
+  p15: "74.551rem",
+  p14: "55.927rem",
+  p13: "41.956rem",
+  p12: "31.475rem",
+  p11: "23.612rem",
+  p10: "17.713rem",
+  p9: "13.288rem",
+  p8: "9.969rem",
+  p7: "7.478rem",
+  p6: "5.61rem",
+  p5: "4.209rem",
+  p4: "3.157rem",
+  p3: "2.369rem",
+  p2: "1.777rem",
+  p1: "1.333rem",
+  base: "1rem",
+  m1: "0.75rem",
+  m2: "0.563rem",
+  m3: "0.422rem",
+  m4: "0.317rem",
+  m5: "0.238rem",
+  m6: "0.178rem"
+};
+
+/*
+|-------------------------------------------------------------------------------
 | Colors                                    https://tailwindcss.com/docs/colors
 |-------------------------------------------------------------------------------
 |
@@ -170,15 +205,15 @@ module.exports = {
   */
 
   textSizes: {
-    xs: ".75rem", // 12px
-    sm: ".875rem", // 14px
-    base: "1rem", // 16px
-    lg: "1.125rem", // 18px
-    xl: "1.25rem", // 20px
-    "2xl": "1.5rem", // 24px
-    "3xl": "1.875rem", // 30px
-    "4xl": "2.25rem", // 36px
-    "5xl": "3rem" // 48px
+    xs: modularScale.m2,
+    sm: modularScale.m1,
+    base: modularScale.base,
+    lg: modularScale.p1,
+    xl: modularScale.p2,
+    "2xl": modularScale.p3,
+    "3xl": modularScale.p4,
+    "4xl": modularScale.p5,
+    "5xl": modularScale.p6
   },
 
   /*
@@ -196,15 +231,10 @@ module.exports = {
   */
 
   fontWeights: {
-    hairline: 100,
-    thin: 200,
     light: 300,
     normal: 400,
     medium: 500,
-    semibold: 600,
-    bold: 700,
-    extrabold: 800,
-    black: 900
+    semibold: 600
   },
 
   /*
@@ -378,22 +408,9 @@ module.exports = {
   |
   */
 
-  width: {
+  width: Object.assign(modularScale, {
     auto: "auto",
     px: "1px",
-    "1": "0.25rem",
-    "2": "0.5rem",
-    "3": "0.75rem",
-    "4": "1rem",
-    "6": "1.5rem",
-    "8": "2rem",
-    "10": "2.5rem",
-    "12": "3rem",
-    "16": "4rem",
-    "24": "6rem",
-    "32": "8rem",
-    "48": "12rem",
-    "64": "16rem",
     "1/2": "50%",
     "1/3": "33.33333%",
     "2/3": "66.66667%",
@@ -407,7 +424,7 @@ module.exports = {
     "5/6": "83.33333%",
     full: "100%",
     screen: "100vw"
-  },
+  }),
 
   /*
   |-----------------------------------------------------------------------------
@@ -424,26 +441,12 @@ module.exports = {
   |
   */
 
-  height: {
+  height: Object.assign(modularScale, {
     auto: "auto",
     px: "1px",
-    "1": "0.25rem",
-    "2": "0.5rem",
-    "3": "0.75rem",
-    "4": "1rem",
-    "6": "1.5rem",
-    "8": "2rem",
-    "10": "2.5rem",
-    "12": "3rem",
-    "16": "4rem",
-    "24": "6rem",
-    "32": "8rem",
-    "48": "12rem",
-    "64": "16rem",
-    "128": "32rem",
     full: "100%",
     screen: "100vh"
-  },
+  }),
 
   /*
   |-----------------------------------------------------------------------------
@@ -499,19 +502,9 @@ module.exports = {
   |
   */
 
-  maxWidth: {
-    xxs: "10rem",
-    xs: "20rem",
-    sm: "30rem",
-    md: "40rem",
-    lg: "50rem",
-    xl: "60rem",
-    "2xl": "70rem",
-    "3xl": "80rem",
-    "4xl": "90rem",
-    "5xl": "100rem",
+  maxWidth: Object.assign(modularScale, {
     full: "100%"
-  },
+  }),
 
   /*
   |-----------------------------------------------------------------------------
@@ -547,17 +540,7 @@ module.exports = {
   |
   */
 
-  padding: {
-    px: "1px",
-    "0": "0",
-    "1": "0.25rem",
-    "2": "0.5rem",
-    "3": "0.75rem",
-    "4": "1rem",
-    "6": "1.5rem",
-    "8": "2rem",
-    "10": "2.5rem"
-  },
+  padding: modularScale,
 
   /*
   |-----------------------------------------------------------------------------
@@ -574,18 +557,7 @@ module.exports = {
   |
   */
 
-  margin: {
-    auto: "auto",
-    px: "1px",
-    "0": "0",
-    "1": "0.25rem",
-    "2": "0.5rem",
-    "3": "0.75rem",
-    "4": "1rem",
-    "6": "1.5rem",
-    "8": "2rem",
-    "10": "2.5rem"
-  },
+  margin: modularScale,
 
   /*
   |-----------------------------------------------------------------------------
@@ -602,16 +574,7 @@ module.exports = {
   |
   */
 
-  negativeMargin: {
-    px: "1px",
-    "0": "0",
-    "1": "0.25rem",
-    "2": "0.5rem",
-    "3": "0.75rem",
-    "4": "1rem",
-    "6": "1.5rem",
-    "8": "2rem"
-  },
+  negativeMargin: modularScale,
 
   /*
   |-----------------------------------------------------------------------------

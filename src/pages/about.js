@@ -4,21 +4,13 @@ import Layout from "../components/Layout";
 
 const AboutPage = () => (
   <Layout>
-    <div className="flex flex-col md:flex-row items-center">
-      <div className="md:w-2/3 md:mr-8">
-        <p className="border-l-4 border-grey font-serif leading-loose pl-4 text-justify">
-          The point is... to live one's life in the full complexity of what one
-          is, which is something much darker, more contradictory, more of a
-          maelstrom of impulses and passions, of cruelty, ecstacy, and madness,
-          than is apparent to the civilized being who glides on the surface and
-          fits smoothly into the world.
-        </p>
-        <p className="font-bold mt-4 text-right text-xs uppercase">
-          — Thomas Nagel
-        </p>
-      </div>
-      <div className="w-2/3 md:w-1/3" />
-    </div>
+    <h1>About me</h1>
+    <p>
+      When I'm not building products or tinkering with side projects, you'll
+      either find me in one of Sydney's vegan cafes or doing my best to spend
+      some time in nature. Whenever we can, my partner and I go on road trips or
+      spend a weekend camping — it's nice to get out of the city some times!
+    </p>
   </Layout>
 );
 

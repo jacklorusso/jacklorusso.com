@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
       ]}
     />
     <Header />
-    <main className="flex flex-col flex-1 md:justify-center max-w-xxl mx-auto px-4 py-8 md:p-8 w-full">
+    <main className="flex flex-col flex-1 md:justify-center max-w-p15 mx-auto w-full">
       {children}
     </main>
     <Footer />

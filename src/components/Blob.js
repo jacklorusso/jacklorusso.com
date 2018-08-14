@@ -1,9 +1,10 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import anime from "animejs";
 
 class Blob extends Component {
   componentDidMount() {
-    var morphing = anime({
+    anime({
       targets: ".blob",
       d: [
         {
@@ -45,11 +46,11 @@ class Blob extends Component {
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1002 471"
         preserveAspectRatio="none"
-        className="center z-0 absolute w-5/6 h-full md:h-128 ml-8"
+        className="center z-0 absolute w-5/6 min-h-full md:h-p13 mx-p5 "
       >
         <path
           className="blob"
-          fill="#E5F8FF"
+          fill={this.props.color}
           fill-rule="evenodd"
           d="M420.179688,440.875 C680.321737,508.995678 917.610531,450.10088 969.55965,297.431808 C1021.50877,144.762736 771.25717,30.90625 516.499357,30.90625 C261.741544,30.90625 61.75,57.6640625 61.75,172.648438 C61.75,287.632813 160.037638,372.754322 420.179688,440.875 Z"
           transform="translate(-47 -21)"
@@ -58,5 +59,9 @@ class Blob extends Component {
     );
   }
 }
+
+Blob.propTypes = {
+  color: PropTypes.string
+};
 
 export default Blob;
