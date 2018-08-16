@@ -2,23 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
+import jlogo from "../images/jlogo32x32.png";
 import Header from "./Header";
 import Footer from "./Footer";
-import "../styles/index.css";
 
 const Layout = ({ children }) => (
-  <div className="flex flex-col font-sans min-h-screen text-grey">
+  <div className="font-sans font-light min-h-screen text-text-inherit">
     <Helmet
       title="Jack Lo Russo"
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }
       ]}
+      link={[{ rel: "shortcut icon", type: "image/png", href: jlogo }]}
     />
     <Header />
-    <main className="flex flex-col flex-1 md:justify-center max-w-p15 mx-auto w-full">
-      {children}
-    </main>
+    <main>{children}</main>
     <Footer />
   </div>
 );

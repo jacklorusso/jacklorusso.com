@@ -1,0 +1,35 @@
+:root {
+  --foreground: hsl(0, 0%, 100%);
+  --background: hsl(0, 0%, 26%);
+  --accent-primary: hsl(251, 85%, 80%);
+  --accent-secondary: hsl(200, 85%, 80%);
+}
+
+@tailwind preflight;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--primary);
+}
+
+hr {
+  width: 15%;
+  border: 0;
+  border-top: 3px solid var(--secondary);
+}
+
+.box-grid {
+  /* scale unit p2, plus the border width of the boxes */
+  margin-left: calc(-1.777rem + 2px);
+}

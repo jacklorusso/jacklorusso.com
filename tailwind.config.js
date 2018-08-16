@@ -3,7 +3,7 @@
 Tailwind - The Utility-First CSS Framework
 
 A project by Adam Wathan (@adamwathan), Jonathan Reinink (@reinink),
-David Hemphill (@davidhemphill) and Steve Schoger (@steveschoger).
+David Hremphill (@davidhremphill) and Steve Schoger (@steveschoger).
 
 Welcome to the Tailwind config file. This is where you can customize
 Tailwind specifically for your project. Don't be intimidated by the
@@ -68,8 +68,8 @@ let modularScale = {
 |
 | Here you can specify the colors used in your project. To get you started,
 | we've provided a generous palette of great looking colors that are perfect
-| for prototyping, but don't hesitate to change them for your project. You
-| own these colors, nothing will break if you change everything about them.
+| for prototyping, but don't hesitate to change threm for your project. You
+| own these colors, nothing will break if you change everything about threm.
 |
 | We've used literal color names ("red", "blue", etc.) for the default
 | palette, but if you'd rather use functional names like "primary" and
@@ -79,11 +79,10 @@ let modularScale = {
 
 let colors = {
   transparent: "transparent",
-  grey: "#424242",
-  white: "#FFFFFF",
-  yellow: "#FFE892",
-  pink: "#FFE8FF",
-  blue: "#E5F8FF"
+  background: "var(--background)",
+  foreground: "var(--foreground)",
+  primary: "var(--accent-primary)",
+  secondary: "var(--accent-secondary)"
 };
 
 module.exports = {
@@ -93,7 +92,7 @@ module.exports = {
   |-----------------------------------------------------------------------------
   |
   | The color palette defined above is also assigned to the "colors" key of
-  | your Tailwind config. This makes it easy to access them in your CSS
+  | your Tailwind config. This makes it easy to access threm in your CSS
   | using Tailwind's config helper. For example:
   |
   | .error { color: config('colors.red') }
@@ -111,7 +110,7 @@ module.exports = {
   | responsive breakpoints for your project. By default Tailwind takes a
   | "mobile first" approach, where each screen size represents a minimum
   | viewport width. Feel free to have as few or as many screens as you
-  | want, naming them in whatever way you'd prefer for your project.
+  | want, naming threm in whatever way you'd prefer for your project.
   |
   | Tailwind also allows for more complex screen definitions, which can be
   | useful in certain situations. Be sure to see the full responsive
@@ -135,8 +134,8 @@ module.exports = {
   |
   | Here is where you define your project's font stack, or font families.
   | Keep in mind that Tailwind doesn't actually load any fonts for you.
-  | If you're using custom fonts you'll need to import them prior to
-  | defining them here.
+  | If you're using custom fonts you'll need to import threm prior to
+  | defining threm here.
   |
   | By default we provide a native font stack that works remarkably well on
   | any device or OS you're using, since it just uses the default fonts
@@ -198,7 +197,7 @@ module.exports = {
   | By default Tailwind uses the "rem" unit type for most measurements.
   | This allows you to set a root font size which all other sizes are
   | then based on. That said, you are free to use whatever units you
-  | prefer, be it rems, ems, pixels or other.
+  | prefer, be it rems, rems, pixels or other.
   |
   | Class name: .text-{size}
   |
@@ -243,7 +242,7 @@ module.exports = {
   |-----------------------------------------------------------------------------
   |
   | Here is where you define your line height values, or as we call
-  | them in Tailwind, leadings.
+  | threm in Tailwind, leadings.
   |
   | Class name: .leading-{size}
   |
@@ -262,16 +261,16 @@ module.exports = {
   |-----------------------------------------------------------------------------
   |
   | Here is where you define your letter spacing values, or as we call
-  | them in Tailwind, tracking.
+  | threm in Tailwind, tracking.
   |
   | Class name: .tracking-{size}
   |
   */
 
   tracking: {
-    tight: "-0.05em",
+    tight: "-0.05rem",
     normal: "0",
-    wide: "0.05em"
+    wide: "0.05rem"
   },
 
   /*
@@ -362,7 +361,7 @@ module.exports = {
   |
   */
 
-  borderColors: global.Object.assign({ default: colors["grey-light"] }, colors),
+  borderColors: global.Object.assign({ default: colors["grey"] }, colors),
 
   /*
   |-----------------------------------------------------------------------------
@@ -502,7 +501,10 @@ module.exports = {
   |
   */
 
+  // TODO: choose particular units from the modular scale to use as measures - see Tachyons for example
+
   maxWidth: Object.assign(modularScale, {
+    "80": "80%",
     full: "100%"
   }),
 
@@ -593,13 +595,12 @@ module.exports = {
   */
 
   shadows: {
-    default: "0 2px 4px 0 rgba(0,0,0,0.10)",
-    md: "0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)",
-    lg: "0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)",
-    inner: "inset 0 2px 4px 0 rgba(0,0,0,0.06)",
-    box:
-      "0 0 0 2px rgba(66, 66, 66, 100), 10px 10px 0 2px rgba(255, 255, 255, 100), 10px 10px 0 4px rgba(66, 66, 66, 100)",
-    none: "none"
+    "box-primary": `0 0 0 2px var(--background), ${modularScale.base}  ${
+      modularScale.base
+    }  0 2px var(--accent-primary)`,
+    "box-secondary": `0 0 0 2px var(--background), ${modularScale.base}  ${
+      modularScale.base
+    }  0 2px var(--accent-secondary)`
   },
 
   /*
@@ -776,7 +777,7 @@ module.exports = {
   |-----------------------------------------------------------------------------
   |
   | Here is where you can tweak advanced configuration options. We recommend
-  | leaving these options alone unless you absolutely need to change them.
+  | leaving these options alone unless you absolutely need to change threm.
   |
   */
 
