@@ -1,12 +1,16 @@
 // small modifications from Heydon Pickering's inclusive components example https://github.com/Heydon/react-theme-switch
-import React, { Component } from "react";
+// using CSS custom properties instead of filter: invert(100); and added icons (aria-hidden)
+
+import React, { Component, Fragment } from "react";
+
+import SunIcon from "./SunIcon";
+import MoonIcon from "./MoonIcon";
 
 class ThemeSwitch extends Component {
   constructor(props) {
     super(props);
 
-    this.css = `html { background: var(--dark); color: var(--light);
-                }`;
+    this.css = `:root { --background: hsl(0, 0%, 0%); --foreground: hsl(0, 0%, 95%); --accent-primary: hsl(266, 100%, 67%}`;
 
     this.state = {
       active: false
@@ -37,25 +41,26 @@ class ThemeSwitch extends Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         <button
-          className="text-inherit"
+          className="text-foreground border-2 border-foreground p-base rounded flex items-center justify-center"
           aria-pressed={this.state.active}
           onClick={this.toggle}
         >
-          Dark mode:{" "}
-          <span aria-hidden="true">{this.state.active ? "on" : "off"}</span>
+          Dark theme
+          <div aria-hidden="true" className="flex items-center">
+            {this.state.active ? <MoonIcon /> : <SunIcon />}
+          </div>
         </button>
         <style media={this.state.active ? "screen" : "none"}>
           {this.state.active ? this.css.trim() : this.css}
         </style>
-      </div>
+      </Fragment>
     );
   }
 }
 
 ThemeSwitch.defaultProps = {
-  preserveRasters: true,
   store: localStorage,
   storeKey: "ThemeSwitch"
 };
