@@ -10,26 +10,26 @@ const IndexPage = () => (
   <Layout>
     <Section>
       <h1 className="text-xl md:text-2xl md:max-w-80 mt-p5 mb-p3 font-medium leading-tight">
-        Jack Lo Russo is a design engineer based in Sydney, but he's{" "}
+        Jack Lo Russo is a design engineer from Sydney, but he's{" "}
         <A href="https://instagram.com/lol_russo">currently in&nbsp;Turkey</A>.
       </h1>
       <p className="text-md md:text-lg md:max-w-p13">
-        Most recently, I was at <A href="https://digivizer.com">Digivizer</A>{" "}
+        Most recently, he was at <A href="https://digivizer.com">Digivizer</A>{" "}
         for 2.5 years, working across product design and front-end development
         with a particular focus on improving collaboration between design and
-        engineering. Since July I have been backpacking around the world with my
+        engineering. Since July he's been backpacking around the world with his
         partner, and will most likely be travelling until early&nbsp;2019.
       </p>
       <p className="text-sm my-p1">
-        This site is under construction. I'm experimenting a lot, so things
-        might be broken!
+        This site is in a phase of heavy experimentation. Things might be broken
+        and it's unlikely to look the same the next time you come back!
       </p>
     </Section>
     <Section>
       <h2 className="mt-p2 mb-p3 font-medium" id="projects">
         Projects (coming soon)
       </h2>
-      <div className="box-grid flex items-center justify-start flex-wrap">
+      <div className="box-grid flex items-start justify-start flex-wrap">
         <Box color="primary">
           <a href="https://designsystems.email" className=" no-underline">
             <h3 className="font-medium mb-m2">design systems digest</h3>

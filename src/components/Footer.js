@@ -12,7 +12,7 @@ const SocialIcon = props => (
 );
 
 const Footer = () => (
-  <footer className="flex justify-start items-center flex-wrap py-p1 px-p2 max-w-p15 mx-auto text-sm">
+  <footer className="flex justify-start items-center flex-wrap py-p1 px-p2 max-w-p15 mx-auto text-sm ">
     {/* <div className="text-center">
       <ThemeSwitch />
     </div> */}

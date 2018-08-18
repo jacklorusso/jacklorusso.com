@@ -62,7 +62,9 @@ hr {
   border-top: 3px solid var(--accent-secondary);
 }
 
+/* 
 .box-grid {
-  /* scale unit p2, plus the border width of the boxes */
+  scale unit p2, plus the border width of the boxes 
   margin-left: calc(-1.777rem + 2px);
 }
+*/
