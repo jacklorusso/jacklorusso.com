@@ -36,29 +36,29 @@ View the full documentation at https://tailwindcss.com.
 */
 
 let modularScale = {
-  p16: "99.376rem",
-  p15: "74.551rem",
-  p14: "55.927rem",
-  p13: "41.956rem",
-  p12: "31.475rem",
-  p11: "23.612rem",
-  p10: "17.713rem",
-  p9: "13.288rem",
-  p8: "9.969rem",
-  p7: "7.478rem",
-  p6: "5.61rem",
-  p5: "4.209rem",
-  p4: "3.157rem",
-  p3: "2.369rem",
-  p2: "1.777rem",
-  p1: "1.333rem",
-  base: "1rem",
-  m1: "0.75rem",
-  m2: "0.563rem",
-  m3: "0.422rem",
-  m4: "0.317rem",
-  m5: "0.238rem",
-  m6: "0.178rem"
+  p16: "var(--scale-p16)",
+  p15: "var(--scale-p15)",
+  p14: "var(--scale-p14)",
+  p13: "var(--scale-p13)",
+  p12: "var(--scale-p12)",
+  p11: "var(--scale-p11)",
+  p10: "var(--scale-p10)",
+  p9: "var(--scale-p9)",
+  p8: "var(--scale-p8)",
+  p7: "var(--scale-p7)",
+  p6: "var(--scale-p6)",
+  p5: "var(--scale-p5)",
+  p4: "var(--scale-p4)",
+  p3: "var(--scale-p3)",
+  p2: "var(--scale-p2)",
+  p1: "var(--scale-p1)",
+  base: "var(--scale-base)",
+  m1: "var(--scale-m1)",
+  m2: "var(--scale-m2)",
+  m3: "var(--scale-m3)",
+  m4: "var(--scale-m4)",
+  m5: "var(--scale-m5)",
+  m6: "var(--scale-m6)"
 };
 
 /*
@@ -147,7 +147,7 @@ module.exports = {
 
   fonts: {
     sans: [
-      "GT Walsheim Trial",
+      "IBM Plex Sans",
       "system-ui",
       "BlinkMacSystem Font",
       "-apple-system",
@@ -595,10 +595,11 @@ module.exports = {
   */
 
   shadows: {
-    "box-primary": `0 0 0 2px var(--background), ${modularScale.base}  ${
+    link: "inset 0 -2px 0 0 var(--accent-primary)",
+    "box-primary": `0 0 0 2px var(--foreground), ${modularScale.base}  ${
       modularScale.base
     }  0 2px var(--accent-primary)`,
-    "box-secondary": `0 0 0 2px var(--background), ${modularScale.base}  ${
+    "box-secondary": `0 0 0 2px var(--foreground), ${modularScale.base}  ${
       modularScale.base
     }  0 2px var(--accent-secondary)`
   },

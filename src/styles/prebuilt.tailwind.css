@@ -1,8 +1,40 @@
 :root {
-  --foreground: hsl(0, 0%, 100%);
-  --background: hsl(0, 0%, 26%);
-  --accent-primary: hsl(251, 85%, 80%);
+  /* colors */
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 26%);
+  --accent-primary: hsl(266, 100%, 90%);
   --accent-secondary: hsl(200, 85%, 80%);
+
+  /* Modular scale calculator */
+  --scale-base: 1rem;
+  --perfect-fourth: 1.333;
+  --scale-ratio: var(--perfect-fourth);
+
+  /* - Negative values */
+  --scale-m1: calc(var(--scale-base) / var(--scale-ratio));
+  --scale-m2: calc(var(--scale-m1) / var(--scale-ratio));
+  --scale-m3: calc(var(--scale-m2) / var(--scale-ratio));
+  --scale-m4: calc(var(--scale-m3) / var(--scale-ratio));
+  --scale-m5: calc(var(--scale-m4) / var(--scale-ratio));
+  --scale-m6: calc(var(--scale-m5) / var(--scale-ratio));
+
+  /* + Positive values */
+  --scale-p1: calc(var(--scale-base) * var(--scale-ratio));
+  --scale-p2: calc(var(--scale-p1) * var(--scale-ratio));
+  --scale-p3: calc(var(--scale-p2) * var(--scale-ratio));
+  --scale-p4: calc(var(--scale-p3) * var(--scale-ratio));
+  --scale-p5: calc(var(--scale-p4) * var(--scale-ratio));
+  --scale-p6: calc(var(--scale-p5) * var(--scale-ratio));
+  --scale-p7: calc(var(--scale-p6) * var(--scale-ratio));
+  --scale-p8: calc(var(--scale-p7) * var(--scale-ratio));
+  --scale-p9: calc(var(--scale-p8) * var(--scale-ratio));
+  --scale-p10: calc(var(--scale-p9) * var(--scale-ratio));
+  --scale-p11: calc(var(--scale-p10) * var(--scale-ratio));
+  --scale-p12: calc(var(--scale-p11) * var(--scale-ratio));
+  --scale-p13: calc(var(--scale-p12) * var(--scale-ratio));
+  --scale-p14: calc(var(--scale-p13) * var(--scale-ratio));
+  --scale-p15: calc(var(--scale-p14) * var(--scale-ratio));
+  --scale-p16: calc(var(--scale-p15) * var(--scale-ratio));
 }
 
 @tailwind preflight;
@@ -20,13 +52,14 @@ html {
 
 a {
   color: inherit;
-  text-decoration-color: var(--primary);
+  text-decoration-color: var(--accent-primary);
+  text-decoration-skip-ink: auto;
 }
 
 hr {
   width: 15%;
   border: 0;
-  border-top: 3px solid var(--secondary);
+  border-top: 3px solid var(--accent-secondary);
 }
 
 .box-grid {

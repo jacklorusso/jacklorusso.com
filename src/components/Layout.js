@@ -7,7 +7,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => (
-  <div className="font-sans font-light min-h-screen text-text-inherit">
+  <div className="font-sans font-light min-h-screen text-inherit">
     <Helmet
       title="Jack Lo Russo"
       meta={[
@@ -15,6 +15,12 @@ const Layout = ({ children }) => (
         { name: "keywords", content: "sample, something" }
       ]}
       link={[{ rel: "shortcut icon", type: "image/png", href: jlogo }]}
+      link={[
+        {
+          href: "https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,500",
+          rel: "stylesheet"
+        }
+      ]}
     />
     <Header />
     <main>{children}</main>

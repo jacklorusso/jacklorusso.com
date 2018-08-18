@@ -11,10 +11,10 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-inherit flex flex-wrap items-center justify-between py-p2 px-p2 max-w-p15 mx-auto w-full">
+    <nav className="bg-inherit flex flex-wrap items-center justify-between p-p2 max-w-p15 mx-auto w-full">
       <Link
         to="/"
-        className="flex items-center text-inherit hover:bg-primary p-base rounded-full -ml-m1"
+        className="flex items-center text-inherit hover:bg-primary p-base rounded-full"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -32,18 +32,18 @@ const Header = () => {
         </svg>
       </Link>
 
-      <button
-        className="block md:hidden flex items-center rounded text-inherit font-light"
+      {/* <button
+        className="block md:hidden rounded text-foreground font-light p-base"
         onClick={handleClick}
       >
         Menu
-      </button>
+      </button> */}
 
       <div
         id="nav"
         className="hidden md:flex md:items-center w-full md:w-auto text-base"
       >
-        <Link
+        {/* <Link
           to="/"
           className="block md:inline-block no-underline text-inherit md:mr-p1"
         >
@@ -66,7 +66,7 @@ const Header = () => {
           className="block md:inline-block no-underline text-inherit"
         >
           GitHub
-        </a>
+        </a> */}
       </div>
     </nav>
   );

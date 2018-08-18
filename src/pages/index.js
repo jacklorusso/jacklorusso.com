@@ -11,7 +11,7 @@ const IndexPage = () => (
     <Section>
       <h1 className="text-xl md:text-2xl md:max-w-80 mt-p5 mb-p3 font-medium leading-tight">
         Jack Lo Russo is a design engineer based in Sydney, but he's{" "}
-        <A href="#">currently in&nbsp;Turkey</A>.
+        <A href="https://instagram.com/lol_russo">currently in&nbsp;Turkey</A>.
       </h1>
       <p className="text-md md:text-lg md:max-w-p13">
         Most recently, I was at <A href="https://digivizer.com">Digivizer</A>{" "}
@@ -20,19 +20,25 @@ const IndexPage = () => (
         engineering. Since July I have been backpacking around the world with my
         partner, and will most likely be travelling until early&nbsp;2019.
       </p>
+      <p className="text-sm my-p1">
+        This site is under construction. I'm experimenting a lot, so things
+        might be broken!
+      </p>
     </Section>
     <Section>
       <h2 className="mt-p2 mb-p3 font-medium" id="projects">
-        Projects
+        Projects (coming soon)
       </h2>
       <div className="box-grid flex items-center justify-center md:justify-start flex-wrap">
         <Box color="primary">
-          <h3 className="font-medium text-center mb-m2">
-            design systems digest
-          </h3>
-          <p className="font-light text-center">
-            a curated newsletter about design systems & front-end architecture
-          </p>
+          <a href="https://designsystems.email" className=" no-underline">
+            <h3 className="font-medium text-center mb-m2">
+              design systems digest
+            </h3>
+            <p className="font-light text-center">
+              a curated newsletter about design systems & front-end architecture
+            </p>
+          </a>
         </Box>
         <Box color="primary">
           <h3 className="font-medium text-center mb-m2">hello, world</h3>
@@ -61,7 +67,7 @@ const IndexPage = () => (
         </Box>
       </div>
     </Section>
-    <Section>
+    {/* <Section>
       <h2 className="mt-p2 mb-p3 font-medium" id="projects">
         Work
       </h2>
@@ -79,7 +85,7 @@ const IndexPage = () => (
           <h3 className="font-medium text-center mb-m2">Launching an MVP</h3>
         </Box>
       </div>
-    </Section>
+    </Section> */}
     <Section>
       <h2 className="font-medium my-p5" id="writing">
         Writing
@@ -121,7 +127,9 @@ const IndexPage = () => (
           </p>
         </li>
         <li className="my-p3 text-2xl">
-          <A href="#">Design Systems for Small Teams</A>
+          <A href="https://www.youtube.com/watch?v=t1_tA2CqcMw&t=5s">
+            Design Systems for Small Teams
+          </A>
 
           <p className="text-base font-light mt-base">
             Design System Sydney meetup — February 2018
