@@ -61,7 +61,7 @@
 // }
 
 // ThemeSwitch.defaultProps = {
-//   store: window.localStorage,
+//   store: localStorage,
 //   storeKey: "ThemeSwitch"
 // };
 
