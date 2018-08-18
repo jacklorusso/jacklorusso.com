@@ -29,39 +29,35 @@ const IndexPage = () => (
       <h2 className="mt-p2 mb-p3 font-medium" id="projects">
         Projects (coming soon)
       </h2>
-      <div className="box-grid flex items-center justify-center md:justify-start flex-wrap">
+      <div className="box-grid flex items-center justify-start flex-wrap">
         <Box color="primary">
           <a href="https://designsystems.email" className=" no-underline">
-            <h3 className="font-medium text-center mb-m2">
-              design systems digest
-            </h3>
-            <p className="font-light text-center">
+            <h3 className="font-medium mb-m2">design systems digest</h3>
+            <p className="font-light">
               a curated newsletter about design systems & front-end architecture
             </p>
           </a>
         </Box>
         <Box color="primary">
-          <h3 className="font-medium text-center mb-m2">hello, world</h3>
-          <p className="font-light text-center">
+          <h3 className="font-medium mb-m2">hello, world</h3>
+          <p className="font-light">
             an experiment using Mapbox and GeoJSON to put my best travel photos
             in context
           </p>
         </Box>
         <Box color="primary">
-          <h3 className="font-medium text-center mb-m2">trak</h3>
-          <p className="font-light text-center">
-            a CLI time tracker written in Go
-          </p>
+          <h3 className="font-medium mb-m2">trak</h3>
+          <p className="font-light">a CLI time tracker written in Go</p>
         </Box>
         <Box color="primary">
-          <h3 className="font-medium text-center mb-m2">dotsandcrosses</h3>
-          <p className="font-light text-center">
+          <h3 className="font-medium mb-m2">dotsandcrosses</h3>
+          <p className="font-light">
             a customisable journal app optimised for habit tracking
           </p>
         </Box>
         <Box color="primary">
-          <h3 className="font-medium text-center mb-m2">nootab</h3>
-          <p className="font-light text-center">
+          <h3 className="font-medium mb-m2">nootab</h3>
+          <p className="font-light">
             a browser extension that turns your new tab into a scratchpad
           </p>
         </Box>
@@ -73,16 +69,16 @@ const IndexPage = () => (
       </h2>
       <div className="box-grid flex items-center justify-center md:justify-start flex-wrap">
         <Box color="secondary">
-          <h3 className="font-medium text-center mb-m2">
+          <h3 className="font-medium mb-m2">
             Rebranding for the next growth phase
           </h3>
-          <p className="font-light text-center">How we built</p>
+          <p className="font-light">How we built</p>
         </Box>
         <Box color="secondary">
-          <h3 className="font-medium text-center mb-m2">Building a</h3>
+          <h3 className="font-medium mb-m2">Building a</h3>
         </Box>
         <Box color="secondary">
-          <h3 className="font-medium text-center mb-m2">Launching an MVP</h3>
+          <h3 className="font-medium mb-m2">Launching an MVP</h3>
         </Box>
       </div>
     </Section> */}
