@@ -146,7 +146,13 @@ module.exports = {
   */
 
   fonts: {
+    // "forma-banner": "FormaDJRBanner",
+    // "forma-display": "FormaDJRDisplay",
+    // "forma-deck": "FormaDJRDeck",
+    // "forma-text": "FormaDJRText",
+    // "forma-micro": "FormaDJRMicro",
     sans: [
+      // "FormaDJRText",
       "IBM Plex Sans",
       "system-ui",
       "BlinkMacSystem Font",
@@ -212,7 +218,9 @@ module.exports = {
     "2xl": modularScale.p3,
     "3xl": modularScale.p4,
     "4xl": modularScale.p5,
-    "5xl": modularScale.p6
+    "5xl": modularScale.p6,
+    "6xl": modularScale.p7,
+    "7xl": modularScale.p8
   },
 
   /*

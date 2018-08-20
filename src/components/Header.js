@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <nav className="bg-inherit flex flex-wrap items-center justify-between p-p2 max-w-p15 mx-auto w-full">
-      <Link
+      {/* <Link
         to="/"
         className="flex items-center text-inherit hover:bg-primary p-base rounded-full"
       >
@@ -30,7 +30,7 @@ const Header = () => {
             transform="rotate(90 12 11.96)"
           />
         </svg>
-      </Link>
+      </Link> */}
 
       {/* <button
         className="block md:hidden rounded text-foreground font-light p-base"

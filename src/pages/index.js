@@ -11,8 +11,9 @@ const IndexPage = () => (
     <Section>
       <h1 className="text-xl md:text-2xl md:max-w-80 mt-p5 mb-p3 font-medium leading-tight">
         Jack Lo Russo is a design engineer from Sydney, but he's{" "}
-        <A href="https://instagram.com/lol_russo">currently in&nbsp;Turkey</A>.
+        <A href="https://instagram.com/lol_russo">currently in&nbsp;Jordan</A>.
       </h1>
+
       <p className="text-md md:text-lg md:max-w-p13">
         Most recently, he was at <A href="https://digivizer.com">Digivizer</A>{" "}
         for 2.5 years, working across product design and front-end development
@@ -25,7 +26,7 @@ const IndexPage = () => (
         and it's unlikely to look the same the next time you come back!
       </p>
     </Section>
-    <Section>
+    {/* <Section>
       <h2 className="mt-p2 mb-p3 font-medium" id="projects">
         Projects (coming soon)
       </h2>
@@ -62,7 +63,7 @@ const IndexPage = () => (
           </p>
         </Box>
       </div>
-    </Section>
+    </Section> */}
     {/* <Section>
       <h2 className="mt-p2 mb-p3 font-medium" id="projects">
         Work

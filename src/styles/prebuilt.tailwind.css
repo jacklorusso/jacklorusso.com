@@ -1,8 +1,10 @@
+/* @import "fonts.css"; */
+
 :root {
   /* colors */
-  --background: hsl(0, 0%, 100%);
-  --foreground: hsl(0, 0%, 26%);
-  --accent-primary: hsl(266, 100%, 90%);
+  --foreground: hsl(0, 0%, 100%);
+  --background: hsl(0, 0%, 05%);
+  --accent-primary: #00adef;
   --accent-secondary: hsl(200, 85%, 80%);
 
   /* Modular scale calculator */
@@ -48,11 +50,12 @@ html {
   color: var(--foreground);
   font-size: 18px;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 a {
   color: inherit;
-  text-decoration-color: var(--accent-primary);
+  /* text-decoration-color: var(--accent-primary); */
   text-decoration-skip-ink: auto;
 }
 

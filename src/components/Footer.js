@@ -5,7 +5,7 @@ import ThemeSwitch from "./ThemeSwitch";
 const SocialIcon = props => (
   <a
     href={props.href}
-    className="text-inherit mr-p1 p-base hover:bg-primary rounded-full flex items-center justify-center"
+    className="text-inherit mr-p1 p-base border-2 border-background hover:border-foreground rounded-full flex items-center justify-center"
   >
     {props.children}
   </a>

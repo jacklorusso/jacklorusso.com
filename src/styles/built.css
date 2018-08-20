@@ -1,8 +1,10 @@
+/* @import "fonts.css"; */
+
 :root {
   /* colors */
-  --background: hsl(0, 0%, 100%);
-  --foreground: hsl(0, 0%, 26%);
-  --accent-primary: hsl(266, 100%, 90%);
+  --foreground: hsl(0, 0%, 100%);
+  --background: hsl(0, 0%, 05%);
+  --accent-primary: #00adef;
   --accent-secondary: hsl(200, 85%, 80%);
   /* Modular scale calculator */
   --scale-base: 1rem;
@@ -5559,6 +5561,14 @@ button,
   font-size: var(--scale-p6);
 }
 
+.text-6xl {
+  font-size: var(--scale-p7);
+}
+
+.text-7xl {
+  font-size: var(--scale-p8);
+}
+
 .italic {
   font-style: italic;
 }
@@ -5926,11 +5936,12 @@ html {
   color: var(--foreground);
   font-size: 18px;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 a {
   color: inherit;
-  text-decoration-color: var(--accent-primary);
+  /* text-decoration-color: var(--accent-primary); */
   text-decoration-skip-ink: auto;
 }
 
@@ -5940,10 +5951,12 @@ hr {
   border-top: 3px solid var(--accent-secondary);
 }
 
+/* 
 .box-grid {
-  /* scale unit p2, plus the border width of the boxes */
+  scale unit p2, plus the border width of the boxes 
   margin-left: calc(-1.777rem + 2px);
 }
+*/
 
 @media (min-width: 576px) {
   .sm\:list-reset {
@@ -10821,6 +10834,14 @@ hr {
 
   .sm\:text-5xl {
     font-size: var(--scale-p6);
+  }
+
+  .sm\:text-6xl {
+    font-size: var(--scale-p7);
+  }
+
+  .sm\:text-7xl {
+    font-size: var(--scale-p8);
   }
 
   .sm\:italic {
@@ -16064,6 +16085,14 @@ hr {
     font-size: var(--scale-p6);
   }
 
+  .md\:text-6xl {
+    font-size: var(--scale-p7);
+  }
+
+  .md\:text-7xl {
+    font-size: var(--scale-p8);
+  }
+
   .md\:italic {
     font-style: italic;
   }
@@ -21305,6 +21334,14 @@ hr {
     font-size: var(--scale-p6);
   }
 
+  .lg\:text-6xl {
+    font-size: var(--scale-p7);
+  }
+
+  .lg\:text-7xl {
+    font-size: var(--scale-p8);
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -26544,6 +26581,14 @@ hr {
 
   .xl\:text-5xl {
     font-size: var(--scale-p6);
+  }
+
+  .xl\:text-6xl {
+    font-size: var(--scale-p7);
+  }
+
+  .xl\:text-7xl {
+    font-size: var(--scale-p8);
   }
 
   .xl\:italic {

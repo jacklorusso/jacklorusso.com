@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const A = props => {
   return (
-    <a className="hover:bg-primary text-inherit" href={props.href}>
+    <a className="text-inherit" href={props.href}>
       {props.children}
     </a>
   );
