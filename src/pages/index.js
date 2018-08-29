@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
-import Box from "../components/Box";
-import A from "../components/A";
+import { Link } from "gatsby";
+
 import Section from "../components/Section";
 
 import "../styles/built.css";
@@ -9,21 +9,18 @@ import "../styles/built.css";
 const IndexPage = () => (
   <Layout>
     <Section>
-      <h1 className="text-xl md:text-2xl md:max-w-80 mt-p5 mb-p3 font-medium leading-tight">
-        Jack Lo Russo is a design engineer from Sydney, but he's{" "}
-        <A href="https://instagram.com/lol_russo">currently in&nbsp;Jordan</A>.
+      <h1 className="text-xl md:text-2xl md:max-w-p13 mt-p6 mb-p3 font-medium leading-tight">
+        Jack Lo Russo is a design engineer from Sydney, but he's currently
+        in&nbsp;Egypt.
       </h1>
 
-      <p className="text-md md:text-lg md:max-w-p13">
-        Most recently, he was at <A href="https://digivizer.com">Digivizer</A>{" "}
+      <p className="md:text-md md:max-w-p13 font-serif">
+        Most recently, he was at <a href="https://digivizer.com">Digivizer</a>{" "}
         for 2.5 years, working across product design and front-end development
         with a particular focus on improving collaboration between design and
         engineering. Since July he's been backpacking around the world with his
-        partner, and will most likely be travelling until early&nbsp;2019.
-      </p>
-      <p className="text-sm my-p1">
-        This site is in a phase of heavy experimentation. Things might be broken
-        and it's unlikely to look the same the next time you come back!
+        partner, and will most likely be travelling until early 2019.{" "}
+        <Link to="/been">See where he's&nbsp;been.</Link>
       </p>
     </Section>
     {/* <Section>
@@ -102,14 +99,14 @@ const IndexPage = () => (
           <A>Design is a process, not a job title</A>
         </li> */}
         <li className="my-p3 text-2xl">
-          <A href="https://medium.com/@lol_russo/8-things-that-cssconf-and-jsconf-au-got-really-really-right-cf514ed4a6f7">
+          <a href="https://medium.com/@lol_russo/8-things-that-cssconf-and-jsconf-au-got-really-really-right-cf514ed4a6f7">
             8 things that CSS / JS Conf AU got really, really right
-          </A>
+          </a>
         </li>
         <li className="my-p3 text-2xl">
-          <A href="https://medium.com/@lol_russo/on-perfectionism-7ac65fe36c99">
+          <a href="https://medium.com/@lol_russo/on-perfectionism-7ac65fe36c99">
             On perfectionism
-          </A>
+          </a>
         </li>
       </ul>
     </Section>
@@ -124,9 +121,9 @@ const IndexPage = () => (
           </p>
         </li>
         <li className="my-p3 text-2xl">
-          <A href="https://www.youtube.com/watch?v=t1_tA2CqcMw&t=5s">
+          <a href="https://www.youtube.com/watch?v=t1_tA2CqcMw&t=5s">
             Design Systems for Small Teams
-          </A>
+          </a>
 
           <p className="text-base font-light mt-base">
             Design System Sydney meetup — February 2018

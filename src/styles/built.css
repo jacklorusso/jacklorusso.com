@@ -1,9 +1,14 @@
-/* @import "fonts.css"; */
+@import "fonts.css";
 
 :root {
   /* colors */
-  --foreground: hsl(0, 0%, 100%);
-  --background: hsl(0, 0%, 05%);
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 05%);
+  --lightness-80: hsl(0, 0%, 80%);
+  --lightness-60: hsl(0, 0%, 60%);
+  --lightness-40: hsl(0, 0%, 40%);
+  --lightness-20: hsl(0, 0%, 20%);
+  --foreground-faded: var(--lightness-80);
   --accent-primary: #00adef;
   --accent-secondary: hsl(200, 85%, 80%);
   /* Modular scale calculator */
@@ -709,6 +714,26 @@ button,
   background-color: var(--foreground);
 }
 
+.bg-foreground-faded {
+  background-color: var(--foreground-faded);
+}
+
+.bg-lightness-80 {
+  background-color: var(--lightness-80);
+}
+
+.bg-lightness-60 {
+  background-color: var(--lightness-60);
+}
+
+.bg-lightness-40 {
+  background-color: var(--lightness-40);
+}
+
+.bg-lightness-20 {
+  background-color: var(--lightness-20);
+}
+
 .bg-primary {
   background-color: var(--accent-primary);
 }
@@ -727,6 +752,26 @@ button,
 
 .hover\:bg-foreground:hover {
   background-color: var(--foreground);
+}
+
+.hover\:bg-foreground-faded:hover {
+  background-color: var(--foreground-faded);
+}
+
+.hover\:bg-lightness-80:hover {
+  background-color: var(--lightness-80);
+}
+
+.hover\:bg-lightness-60:hover {
+  background-color: var(--lightness-60);
+}
+
+.hover\:bg-lightness-40:hover {
+  background-color: var(--lightness-40);
+}
+
+.hover\:bg-lightness-20:hover {
+  background-color: var(--lightness-20);
 }
 
 .hover\:bg-primary:hover {
@@ -813,6 +858,26 @@ button,
   border-color: var(--foreground);
 }
 
+.border-foreground-faded {
+  border-color: var(--foreground-faded);
+}
+
+.border-lightness-80 {
+  border-color: var(--lightness-80);
+}
+
+.border-lightness-60 {
+  border-color: var(--lightness-60);
+}
+
+.border-lightness-40 {
+  border-color: var(--lightness-40);
+}
+
+.border-lightness-20 {
+  border-color: var(--lightness-20);
+}
+
 .border-primary {
   border-color: var(--accent-primary);
 }
@@ -831,6 +896,26 @@ button,
 
 .hover\:border-foreground:hover {
   border-color: var(--foreground);
+}
+
+.hover\:border-foreground-faded:hover {
+  border-color: var(--foreground-faded);
+}
+
+.hover\:border-lightness-80:hover {
+  border-color: var(--lightness-80);
+}
+
+.hover\:border-lightness-60:hover {
+  border-color: var(--lightness-60);
+}
+
+.hover\:border-lightness-40:hover {
+  border-color: var(--lightness-40);
+}
+
+.hover\:border-lightness-20:hover {
+  border-color: var(--lightness-20);
 }
 
 .hover\:border-primary:hover {
@@ -1395,12 +1480,32 @@ button,
   clear: both;
 }
 
+.font-forma-banner {
+  font-family: FormaDJRBanner;
+}
+
+.font-forma-display {
+  font-family: FormaDJRDisplay;
+}
+
+.font-forma-deck {
+  font-family: FormaDJRDeck;
+}
+
+.font-forma-text {
+  font-family: FormaDJRText;
+}
+
+.font-forma-micro {
+  font-family: FormaDJRMicro;
+}
+
 .font-sans {
-  font-family: IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-serif {
-  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  font-family: Copernicus, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
 }
 
 .font-mono {
@@ -5497,6 +5602,26 @@ button,
   color: var(--foreground);
 }
 
+.text-foreground-faded {
+  color: var(--foreground-faded);
+}
+
+.text-lightness-80 {
+  color: var(--lightness-80);
+}
+
+.text-lightness-60 {
+  color: var(--lightness-60);
+}
+
+.text-lightness-40 {
+  color: var(--lightness-40);
+}
+
+.text-lightness-20 {
+  color: var(--lightness-20);
+}
+
 .text-primary {
   color: var(--accent-primary);
 }
@@ -5515,6 +5640,26 @@ button,
 
 .hover\:text-foreground:hover {
   color: var(--foreground);
+}
+
+.hover\:text-foreground-faded:hover {
+  color: var(--foreground-faded);
+}
+
+.hover\:text-lightness-80:hover {
+  color: var(--lightness-80);
+}
+
+.hover\:text-lightness-60:hover {
+  color: var(--lightness-60);
+}
+
+.hover\:text-lightness-40:hover {
+  color: var(--lightness-40);
+}
+
+.hover\:text-lightness-20:hover {
+  color: var(--lightness-20);
 }
 
 .hover\:text-primary:hover {
@@ -5941,8 +6086,14 @@ html {
 
 a {
   color: inherit;
-  /* text-decoration-color: var(--accent-primary); */
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
+  transition: all 100ms cubic-bezier(.4, 0, .2, 1);
+  border-bottom: 1px solid #e0d6eb;
+  box-shadow: inset 0 -2px 0 0 #e0d6eb;
+}
+
+a:hover {
+  /* background: #e0d6eb; */
 }
 
 hr {
@@ -5951,12 +6102,13 @@ hr {
   border-top: 3px solid var(--accent-secondary);
 }
 
-/* 
-.box-grid {
-  scale unit p2, plus the border width of the boxes 
-  margin-left: calc(-1.777rem + 2px);
+.nav-link {
+  color: inherit;
+  text-decoration: none;
+  transition: none;
+  border-bottom: none;
+  box-shadow: none;
 }
-*/
 
 @media (min-width: 576px) {
   .sm\:list-reset {
@@ -5992,6 +6144,26 @@ hr {
     background-color: var(--foreground);
   }
 
+  .sm\:bg-foreground-faded {
+    background-color: var(--foreground-faded);
+  }
+
+  .sm\:bg-lightness-80 {
+    background-color: var(--lightness-80);
+  }
+
+  .sm\:bg-lightness-60 {
+    background-color: var(--lightness-60);
+  }
+
+  .sm\:bg-lightness-40 {
+    background-color: var(--lightness-40);
+  }
+
+  .sm\:bg-lightness-20 {
+    background-color: var(--lightness-20);
+  }
+
   .sm\:bg-primary {
     background-color: var(--accent-primary);
   }
@@ -6010,6 +6182,26 @@ hr {
 
   .sm\:hover\:bg-foreground:hover {
     background-color: var(--foreground);
+  }
+
+  .sm\:hover\:bg-foreground-faded:hover {
+    background-color: var(--foreground-faded);
+  }
+
+  .sm\:hover\:bg-lightness-80:hover {
+    background-color: var(--lightness-80);
+  }
+
+  .sm\:hover\:bg-lightness-60:hover {
+    background-color: var(--lightness-60);
+  }
+
+  .sm\:hover\:bg-lightness-40:hover {
+    background-color: var(--lightness-40);
+  }
+
+  .sm\:hover\:bg-lightness-20:hover {
+    background-color: var(--lightness-20);
   }
 
   .sm\:hover\:bg-primary:hover {
@@ -6096,6 +6288,26 @@ hr {
     border-color: var(--foreground);
   }
 
+  .sm\:border-foreground-faded {
+    border-color: var(--foreground-faded);
+  }
+
+  .sm\:border-lightness-80 {
+    border-color: var(--lightness-80);
+  }
+
+  .sm\:border-lightness-60 {
+    border-color: var(--lightness-60);
+  }
+
+  .sm\:border-lightness-40 {
+    border-color: var(--lightness-40);
+  }
+
+  .sm\:border-lightness-20 {
+    border-color: var(--lightness-20);
+  }
+
   .sm\:border-primary {
     border-color: var(--accent-primary);
   }
@@ -6114,6 +6326,26 @@ hr {
 
   .sm\:hover\:border-foreground:hover {
     border-color: var(--foreground);
+  }
+
+  .sm\:hover\:border-foreground-faded:hover {
+    border-color: var(--foreground-faded);
+  }
+
+  .sm\:hover\:border-lightness-80:hover {
+    border-color: var(--lightness-80);
+  }
+
+  .sm\:hover\:border-lightness-60:hover {
+    border-color: var(--lightness-60);
+  }
+
+  .sm\:hover\:border-lightness-40:hover {
+    border-color: var(--lightness-40);
+  }
+
+  .sm\:hover\:border-lightness-20:hover {
+    border-color: var(--lightness-20);
   }
 
   .sm\:hover\:border-primary:hover {
@@ -6678,12 +6910,32 @@ hr {
     clear: both;
   }
 
+  .sm\:font-forma-banner {
+    font-family: FormaDJRBanner;
+  }
+
+  .sm\:font-forma-display {
+    font-family: FormaDJRDisplay;
+  }
+
+  .sm\:font-forma-deck {
+    font-family: FormaDJRDeck;
+  }
+
+  .sm\:font-forma-text {
+    font-family: FormaDJRText;
+  }
+
+  .sm\:font-forma-micro {
+    font-family: FormaDJRMicro;
+  }
+
   .sm\:font-sans {
-    font-family: IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Copernicus, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .sm\:font-mono {
@@ -10772,6 +11024,26 @@ hr {
     color: var(--foreground);
   }
 
+  .sm\:text-foreground-faded {
+    color: var(--foreground-faded);
+  }
+
+  .sm\:text-lightness-80 {
+    color: var(--lightness-80);
+  }
+
+  .sm\:text-lightness-60 {
+    color: var(--lightness-60);
+  }
+
+  .sm\:text-lightness-40 {
+    color: var(--lightness-40);
+  }
+
+  .sm\:text-lightness-20 {
+    color: var(--lightness-20);
+  }
+
   .sm\:text-primary {
     color: var(--accent-primary);
   }
@@ -10790,6 +11062,26 @@ hr {
 
   .sm\:hover\:text-foreground:hover {
     color: var(--foreground);
+  }
+
+  .sm\:hover\:text-foreground-faded:hover {
+    color: var(--foreground-faded);
+  }
+
+  .sm\:hover\:text-lightness-80:hover {
+    color: var(--lightness-80);
+  }
+
+  .sm\:hover\:text-lightness-60:hover {
+    color: var(--lightness-60);
+  }
+
+  .sm\:hover\:text-lightness-40:hover {
+    color: var(--lightness-40);
+  }
+
+  .sm\:hover\:text-lightness-20:hover {
+    color: var(--lightness-20);
   }
 
   .sm\:hover\:text-primary:hover {
@@ -11241,6 +11533,26 @@ hr {
     background-color: var(--foreground);
   }
 
+  .md\:bg-foreground-faded {
+    background-color: var(--foreground-faded);
+  }
+
+  .md\:bg-lightness-80 {
+    background-color: var(--lightness-80);
+  }
+
+  .md\:bg-lightness-60 {
+    background-color: var(--lightness-60);
+  }
+
+  .md\:bg-lightness-40 {
+    background-color: var(--lightness-40);
+  }
+
+  .md\:bg-lightness-20 {
+    background-color: var(--lightness-20);
+  }
+
   .md\:bg-primary {
     background-color: var(--accent-primary);
   }
@@ -11259,6 +11571,26 @@ hr {
 
   .md\:hover\:bg-foreground:hover {
     background-color: var(--foreground);
+  }
+
+  .md\:hover\:bg-foreground-faded:hover {
+    background-color: var(--foreground-faded);
+  }
+
+  .md\:hover\:bg-lightness-80:hover {
+    background-color: var(--lightness-80);
+  }
+
+  .md\:hover\:bg-lightness-60:hover {
+    background-color: var(--lightness-60);
+  }
+
+  .md\:hover\:bg-lightness-40:hover {
+    background-color: var(--lightness-40);
+  }
+
+  .md\:hover\:bg-lightness-20:hover {
+    background-color: var(--lightness-20);
   }
 
   .md\:hover\:bg-primary:hover {
@@ -11345,6 +11677,26 @@ hr {
     border-color: var(--foreground);
   }
 
+  .md\:border-foreground-faded {
+    border-color: var(--foreground-faded);
+  }
+
+  .md\:border-lightness-80 {
+    border-color: var(--lightness-80);
+  }
+
+  .md\:border-lightness-60 {
+    border-color: var(--lightness-60);
+  }
+
+  .md\:border-lightness-40 {
+    border-color: var(--lightness-40);
+  }
+
+  .md\:border-lightness-20 {
+    border-color: var(--lightness-20);
+  }
+
   .md\:border-primary {
     border-color: var(--accent-primary);
   }
@@ -11363,6 +11715,26 @@ hr {
 
   .md\:hover\:border-foreground:hover {
     border-color: var(--foreground);
+  }
+
+  .md\:hover\:border-foreground-faded:hover {
+    border-color: var(--foreground-faded);
+  }
+
+  .md\:hover\:border-lightness-80:hover {
+    border-color: var(--lightness-80);
+  }
+
+  .md\:hover\:border-lightness-60:hover {
+    border-color: var(--lightness-60);
+  }
+
+  .md\:hover\:border-lightness-40:hover {
+    border-color: var(--lightness-40);
+  }
+
+  .md\:hover\:border-lightness-20:hover {
+    border-color: var(--lightness-20);
   }
 
   .md\:hover\:border-primary:hover {
@@ -11927,12 +12299,32 @@ hr {
     clear: both;
   }
 
+  .md\:font-forma-banner {
+    font-family: FormaDJRBanner;
+  }
+
+  .md\:font-forma-display {
+    font-family: FormaDJRDisplay;
+  }
+
+  .md\:font-forma-deck {
+    font-family: FormaDJRDeck;
+  }
+
+  .md\:font-forma-text {
+    font-family: FormaDJRText;
+  }
+
+  .md\:font-forma-micro {
+    font-family: FormaDJRMicro;
+  }
+
   .md\:font-sans {
-    font-family: IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .md\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Copernicus, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .md\:font-mono {
@@ -16021,6 +16413,26 @@ hr {
     color: var(--foreground);
   }
 
+  .md\:text-foreground-faded {
+    color: var(--foreground-faded);
+  }
+
+  .md\:text-lightness-80 {
+    color: var(--lightness-80);
+  }
+
+  .md\:text-lightness-60 {
+    color: var(--lightness-60);
+  }
+
+  .md\:text-lightness-40 {
+    color: var(--lightness-40);
+  }
+
+  .md\:text-lightness-20 {
+    color: var(--lightness-20);
+  }
+
   .md\:text-primary {
     color: var(--accent-primary);
   }
@@ -16039,6 +16451,26 @@ hr {
 
   .md\:hover\:text-foreground:hover {
     color: var(--foreground);
+  }
+
+  .md\:hover\:text-foreground-faded:hover {
+    color: var(--foreground-faded);
+  }
+
+  .md\:hover\:text-lightness-80:hover {
+    color: var(--lightness-80);
+  }
+
+  .md\:hover\:text-lightness-60:hover {
+    color: var(--lightness-60);
+  }
+
+  .md\:hover\:text-lightness-40:hover {
+    color: var(--lightness-40);
+  }
+
+  .md\:hover\:text-lightness-20:hover {
+    color: var(--lightness-20);
   }
 
   .md\:hover\:text-primary:hover {
@@ -16490,6 +16922,26 @@ hr {
     background-color: var(--foreground);
   }
 
+  .lg\:bg-foreground-faded {
+    background-color: var(--foreground-faded);
+  }
+
+  .lg\:bg-lightness-80 {
+    background-color: var(--lightness-80);
+  }
+
+  .lg\:bg-lightness-60 {
+    background-color: var(--lightness-60);
+  }
+
+  .lg\:bg-lightness-40 {
+    background-color: var(--lightness-40);
+  }
+
+  .lg\:bg-lightness-20 {
+    background-color: var(--lightness-20);
+  }
+
   .lg\:bg-primary {
     background-color: var(--accent-primary);
   }
@@ -16508,6 +16960,26 @@ hr {
 
   .lg\:hover\:bg-foreground:hover {
     background-color: var(--foreground);
+  }
+
+  .lg\:hover\:bg-foreground-faded:hover {
+    background-color: var(--foreground-faded);
+  }
+
+  .lg\:hover\:bg-lightness-80:hover {
+    background-color: var(--lightness-80);
+  }
+
+  .lg\:hover\:bg-lightness-60:hover {
+    background-color: var(--lightness-60);
+  }
+
+  .lg\:hover\:bg-lightness-40:hover {
+    background-color: var(--lightness-40);
+  }
+
+  .lg\:hover\:bg-lightness-20:hover {
+    background-color: var(--lightness-20);
   }
 
   .lg\:hover\:bg-primary:hover {
@@ -16594,6 +17066,26 @@ hr {
     border-color: var(--foreground);
   }
 
+  .lg\:border-foreground-faded {
+    border-color: var(--foreground-faded);
+  }
+
+  .lg\:border-lightness-80 {
+    border-color: var(--lightness-80);
+  }
+
+  .lg\:border-lightness-60 {
+    border-color: var(--lightness-60);
+  }
+
+  .lg\:border-lightness-40 {
+    border-color: var(--lightness-40);
+  }
+
+  .lg\:border-lightness-20 {
+    border-color: var(--lightness-20);
+  }
+
   .lg\:border-primary {
     border-color: var(--accent-primary);
   }
@@ -16612,6 +17104,26 @@ hr {
 
   .lg\:hover\:border-foreground:hover {
     border-color: var(--foreground);
+  }
+
+  .lg\:hover\:border-foreground-faded:hover {
+    border-color: var(--foreground-faded);
+  }
+
+  .lg\:hover\:border-lightness-80:hover {
+    border-color: var(--lightness-80);
+  }
+
+  .lg\:hover\:border-lightness-60:hover {
+    border-color: var(--lightness-60);
+  }
+
+  .lg\:hover\:border-lightness-40:hover {
+    border-color: var(--lightness-40);
+  }
+
+  .lg\:hover\:border-lightness-20:hover {
+    border-color: var(--lightness-20);
   }
 
   .lg\:hover\:border-primary:hover {
@@ -17176,12 +17688,32 @@ hr {
     clear: both;
   }
 
+  .lg\:font-forma-banner {
+    font-family: FormaDJRBanner;
+  }
+
+  .lg\:font-forma-display {
+    font-family: FormaDJRDisplay;
+  }
+
+  .lg\:font-forma-deck {
+    font-family: FormaDJRDeck;
+  }
+
+  .lg\:font-forma-text {
+    font-family: FormaDJRText;
+  }
+
+  .lg\:font-forma-micro {
+    font-family: FormaDJRMicro;
+  }
+
   .lg\:font-sans {
-    font-family: IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Copernicus, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .lg\:font-mono {
@@ -21270,6 +21802,26 @@ hr {
     color: var(--foreground);
   }
 
+  .lg\:text-foreground-faded {
+    color: var(--foreground-faded);
+  }
+
+  .lg\:text-lightness-80 {
+    color: var(--lightness-80);
+  }
+
+  .lg\:text-lightness-60 {
+    color: var(--lightness-60);
+  }
+
+  .lg\:text-lightness-40 {
+    color: var(--lightness-40);
+  }
+
+  .lg\:text-lightness-20 {
+    color: var(--lightness-20);
+  }
+
   .lg\:text-primary {
     color: var(--accent-primary);
   }
@@ -21288,6 +21840,26 @@ hr {
 
   .lg\:hover\:text-foreground:hover {
     color: var(--foreground);
+  }
+
+  .lg\:hover\:text-foreground-faded:hover {
+    color: var(--foreground-faded);
+  }
+
+  .lg\:hover\:text-lightness-80:hover {
+    color: var(--lightness-80);
+  }
+
+  .lg\:hover\:text-lightness-60:hover {
+    color: var(--lightness-60);
+  }
+
+  .lg\:hover\:text-lightness-40:hover {
+    color: var(--lightness-40);
+  }
+
+  .lg\:hover\:text-lightness-20:hover {
+    color: var(--lightness-20);
   }
 
   .lg\:hover\:text-primary:hover {
@@ -21739,6 +22311,26 @@ hr {
     background-color: var(--foreground);
   }
 
+  .xl\:bg-foreground-faded {
+    background-color: var(--foreground-faded);
+  }
+
+  .xl\:bg-lightness-80 {
+    background-color: var(--lightness-80);
+  }
+
+  .xl\:bg-lightness-60 {
+    background-color: var(--lightness-60);
+  }
+
+  .xl\:bg-lightness-40 {
+    background-color: var(--lightness-40);
+  }
+
+  .xl\:bg-lightness-20 {
+    background-color: var(--lightness-20);
+  }
+
   .xl\:bg-primary {
     background-color: var(--accent-primary);
   }
@@ -21757,6 +22349,26 @@ hr {
 
   .xl\:hover\:bg-foreground:hover {
     background-color: var(--foreground);
+  }
+
+  .xl\:hover\:bg-foreground-faded:hover {
+    background-color: var(--foreground-faded);
+  }
+
+  .xl\:hover\:bg-lightness-80:hover {
+    background-color: var(--lightness-80);
+  }
+
+  .xl\:hover\:bg-lightness-60:hover {
+    background-color: var(--lightness-60);
+  }
+
+  .xl\:hover\:bg-lightness-40:hover {
+    background-color: var(--lightness-40);
+  }
+
+  .xl\:hover\:bg-lightness-20:hover {
+    background-color: var(--lightness-20);
   }
 
   .xl\:hover\:bg-primary:hover {
@@ -21843,6 +22455,26 @@ hr {
     border-color: var(--foreground);
   }
 
+  .xl\:border-foreground-faded {
+    border-color: var(--foreground-faded);
+  }
+
+  .xl\:border-lightness-80 {
+    border-color: var(--lightness-80);
+  }
+
+  .xl\:border-lightness-60 {
+    border-color: var(--lightness-60);
+  }
+
+  .xl\:border-lightness-40 {
+    border-color: var(--lightness-40);
+  }
+
+  .xl\:border-lightness-20 {
+    border-color: var(--lightness-20);
+  }
+
   .xl\:border-primary {
     border-color: var(--accent-primary);
   }
@@ -21861,6 +22493,26 @@ hr {
 
   .xl\:hover\:border-foreground:hover {
     border-color: var(--foreground);
+  }
+
+  .xl\:hover\:border-foreground-faded:hover {
+    border-color: var(--foreground-faded);
+  }
+
+  .xl\:hover\:border-lightness-80:hover {
+    border-color: var(--lightness-80);
+  }
+
+  .xl\:hover\:border-lightness-60:hover {
+    border-color: var(--lightness-60);
+  }
+
+  .xl\:hover\:border-lightness-40:hover {
+    border-color: var(--lightness-40);
+  }
+
+  .xl\:hover\:border-lightness-20:hover {
+    border-color: var(--lightness-20);
   }
 
   .xl\:hover\:border-primary:hover {
@@ -22425,12 +23077,32 @@ hr {
     clear: both;
   }
 
+  .xl\:font-forma-banner {
+    font-family: FormaDJRBanner;
+  }
+
+  .xl\:font-forma-display {
+    font-family: FormaDJRDisplay;
+  }
+
+  .xl\:font-forma-deck {
+    font-family: FormaDJRDeck;
+  }
+
+  .xl\:font-forma-text {
+    font-family: FormaDJRText;
+  }
+
+  .xl\:font-forma-micro {
+    font-family: FormaDJRMicro;
+  }
+
   .xl\:font-sans {
-    font-family: IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Copernicus, Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .xl\:font-mono {
@@ -26519,6 +27191,26 @@ hr {
     color: var(--foreground);
   }
 
+  .xl\:text-foreground-faded {
+    color: var(--foreground-faded);
+  }
+
+  .xl\:text-lightness-80 {
+    color: var(--lightness-80);
+  }
+
+  .xl\:text-lightness-60 {
+    color: var(--lightness-60);
+  }
+
+  .xl\:text-lightness-40 {
+    color: var(--lightness-40);
+  }
+
+  .xl\:text-lightness-20 {
+    color: var(--lightness-20);
+  }
+
   .xl\:text-primary {
     color: var(--accent-primary);
   }
@@ -26537,6 +27229,26 @@ hr {
 
   .xl\:hover\:text-foreground:hover {
     color: var(--foreground);
+  }
+
+  .xl\:hover\:text-foreground-faded:hover {
+    color: var(--foreground-faded);
+  }
+
+  .xl\:hover\:text-lightness-80:hover {
+    color: var(--lightness-80);
+  }
+
+  .xl\:hover\:text-lightness-60:hover {
+    color: var(--lightness-60);
+  }
+
+  .xl\:hover\:text-lightness-40:hover {
+    color: var(--lightness-40);
+  }
+
+  .xl\:hover\:text-lightness-20:hover {
+    color: var(--lightness-20);
   }
 
   .xl\:hover\:text-primary:hover {

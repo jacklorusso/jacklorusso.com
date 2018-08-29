@@ -1,0 +1,624 @@
+/*
+Galaxie Copernicus
+*/
+
+@font-face {
+  src: url("fonts/Copernicus-BookItalic.eot"); /* IE < 9 */
+  src: url("fonts/Copernicus-BookItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/Copernicus-BookItalic.woff") format("woff");
+  font-family: "Copernicus";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/Copernicus-Book.eot"); /* IE < 9 */
+  src: url("fonts/Copernicus-Book.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/Copernicus-Book.woff") format("woff");
+  font-family: "Copernicus";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/Copernicus-SemiboldItalic.eot"); /* IE < 9 */
+  src: url("fonts/Copernicus-SemiboldItalic.eot") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/Copernicus-SemiboldItalic.woff") format("woff");
+  font-family: "Copernicus";
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/Copernicus-Semibold.eot"); /* IE < 9 */
+  src: url("fonts/Copernicus-Semibold.eot") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/Copernicus-Semibold.woff") format("woff");
+  font-family: "Copernicus";
+  font-style: normal;
+  font-weight: 500;
+}
+
+/*
+Forma DJR
+*/
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-Regular.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-Regular.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-Regular.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-Regular.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-ExtraLight.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-ExtraLight.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-ExtraLight.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-ExtraLight.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: normal;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-ExtraLight.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-ExtraLight.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-ExtraLight.woff2") format("woff2"),
+    url("fonts/FormaDJRText-ExtraLight.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: normal;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-ExtraLight.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-ExtraLight.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-ExtraLight.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-ExtraLight.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: normal;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-ExtraLight.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-ExtraLight.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-ExtraLight.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-ExtraLight.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: normal;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-ExtraLight.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-ExtraLight.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-ExtraLight.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-ExtraLight.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: normal;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-ExtraLightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-ExtraLightItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-ExtraLightItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-ExtraLightItalic.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: italic;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-ExtraLightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-ExtraLightItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-ExtraLightItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRText-ExtraLightItalic.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: italic;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-ExtraLightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-ExtraLightItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-ExtraLightItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-ExtraLightItalic.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: italic;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-ExtraLightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-ExtraLightItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("fonts/FormaDJRDisplay-ExtraLightItalic.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: italic;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-ExtraLightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-ExtraLightItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-ExtraLightItalic.woff2")
+      format("woff2"),
+    url("fonts/FormaDJRBanner-ExtraLightItalic.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: italic;
+  font-weight: 275;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-Light.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-Light.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-Light.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-Light.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-Light.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-Light.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-Light.woff2") format("woff2"),
+    url("fonts/FormaDJRText-Light.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-Light.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-Light.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-Light.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-Light.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-Light.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-Light.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-Light.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-Light.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-Light.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-Light.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-Light.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-Light.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-LightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-LightItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-LightItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-LightItalic.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-LightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-LightItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-LightItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRText-LightItalic.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-LightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-LightItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-LightItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-LightItalic.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-LightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-LightItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-LightItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-LightItalic.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-LightItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-LightItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-LightItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-LightItalic.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: italic;
+  font-weight: 300;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-Regular.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-Regular.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-Regular.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-Regular.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-Regular.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-Regular.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-Regular.woff2") format("woff2"),
+    url("fonts/FormaDJRText-Regular.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-Regular.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-Regular.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-Regular.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-Regular.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-Regular.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-Regular.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-Regular.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-Regular.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-Regular.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-Regular.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-Regular.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-Regular.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-Italic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-Italic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-Italic.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-Italic.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-Italic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-Italic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-Italic.woff2") format("woff2"),
+    url("fonts/FormaDJRText-Italic.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-Italic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-Italic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-Italic.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-Italic.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-Italic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-Italic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-Italic.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-Italic.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-Italic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-Italic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-Italic.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-Italic.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-Medium.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-Medium.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-Medium.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-Medium.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-Medium.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-Medium.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-Medium.woff2") format("woff2"),
+    url("fonts/FormaDJRText-Medium.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-Medium.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-Medium.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-Medium.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-Medium.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-Medium.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-Medium.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-Medium.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-Medium.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-Medium.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-Medium.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-Medium.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-Medium.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-MediumItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-MediumItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-MediumItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-MediumItalic.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-MediumItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-MediumItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-MediumItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRText-MediumItalic.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-MediumItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-MediumItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-MediumItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-MediumItalic.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-MediumItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-MediumItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-MediumItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-MediumItalic.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-MediumItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-MediumItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-MediumItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-MediumItalic.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: italic;
+  font-weight: 500;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-Bold.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-Bold.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-Bold.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-Bold.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-Bold.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-Bold.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-Bold.woff2") format("woff2"),
+    url("fonts/FormaDJRText-Bold.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-Bold.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-Bold.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-Bold.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-Bold.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-Bold.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-Bold.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-Bold.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-Bold.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-Bold.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-Bold.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-Bold.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-Bold.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRMicro-BoldItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRMicro-BoldItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRMicro-BoldItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRMicro-BoldItalic.woff") format("woff");
+  font-family: "FormaDJRMicro";
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRText-BoldItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRText-BoldItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRText-BoldItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRText-BoldItalic.woff") format("woff");
+  font-family: "FormaDJRText";
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-BoldItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-BoldItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-BoldItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-BoldItalic.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-BoldItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-BoldItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-BoldItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-BoldItalic.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-BoldItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-BoldItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-BoldItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-BoldItalic.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-Black.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-Black.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-Black.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-Black.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-Black.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-Black.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-Black.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-Black.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-Black.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-Black.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-Black.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-Black.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDeck-BlackItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDeck-BlackItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDeck-BlackItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDeck-BlackItalic.woff") format("woff");
+  font-family: "FormaDJRDeck";
+  font-style: italic;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRDisplay-BlackItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRDisplay-BlackItalic.eot?#")
+      format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRDisplay-BlackItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRDisplay-BlackItalic.woff") format("woff");
+  font-family: "FormaDJRDisplay";
+  font-style: italic;
+  font-weight: 800;
+}
+
+@font-face {
+  src: url("fonts/FormaDJRBanner-BlackItalic.eot"); /* IE < 9 */
+  src: url("fonts/FormaDJRBanner-BlackItalic.eot?#") format("embedded-opentype"),
+    /* IE 9 */ url("fonts/FormaDJRBanner-BlackItalic.woff2") format("woff2"),
+    url("fonts/FormaDJRBanner-BlackItalic.woff") format("woff");
+  font-family: "FormaDJRBanner";
+  font-style: italic;
+  font-weight: 800;
+}

@@ -11,11 +11,8 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-inherit flex flex-wrap items-center justify-between p-p2 max-w-p15 mx-auto w-full">
-      {/* <Link
-        to="/"
-        className="flex items-center text-inherit hover:bg-primary p-base rounded-full"
-      >
+    <nav className="flex flex-wrap items-center justify-between p-p2 max-w-p15 mx-auto w-full">
+      <Link to="/" className="flex items-center text-inherit py-base nav-link">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -30,20 +27,20 @@ const Header = () => {
             transform="rotate(90 12 11.96)"
           />
         </svg>
-      </Link> */}
+      </Link>
 
-      {/* <button
+      <button
         className="block md:hidden rounded text-foreground font-light p-base"
         onClick={handleClick}
       >
         Menu
-      </button> */}
+      </button>
 
       <div
         id="nav"
         className="hidden md:flex md:items-center w-full md:w-auto text-base"
       >
-        {/* <Link
+        <Link
           to="/"
           className="block md:inline-block no-underline text-inherit md:mr-p1"
         >
@@ -55,7 +52,7 @@ const Header = () => {
         >
           About
         </Link>
-        <a
+        {/* <a
           href="https://twitter.com/lol_russo"
           className="block md:inline-block no-underline text-inherit md:mr-base"
         >

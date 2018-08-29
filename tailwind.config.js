@@ -81,6 +81,11 @@ let colors = {
   transparent: "transparent",
   background: "var(--background)",
   foreground: "var(--foreground)",
+  "foreground-faded": "var(--foreground-faded)",
+  "lightness-80": "var(--lightness-80)",
+  "lightness-60": "var(--lightness-60)",
+  "lightness-40": "var(--lightness-40)",
+  "lightness-20": "var(--lightness-20)",
   primary: "var(--accent-primary)",
   secondary: "var(--accent-secondary)"
 };
@@ -146,13 +151,13 @@ module.exports = {
   */
 
   fonts: {
-    // "forma-banner": "FormaDJRBanner",
-    // "forma-display": "FormaDJRDisplay",
-    // "forma-deck": "FormaDJRDeck",
-    // "forma-text": "FormaDJRText",
-    // "forma-micro": "FormaDJRMicro",
+    "forma-banner": "FormaDJRBanner",
+    "forma-display": "FormaDJRDisplay",
+    "forma-deck": "FormaDJRDeck",
+    "forma-text": "FormaDJRText",
+    "forma-micro": "FormaDJRMicro",
     sans: [
-      // "FormaDJRText",
+      "FormaDJRMicro",
       "IBM Plex Sans",
       "system-ui",
       "BlinkMacSystem Font",
@@ -168,6 +173,7 @@ module.exports = {
       "sans-serif"
     ],
     serif: [
+      "Copernicus",
       "Constantia",
       "Lucida Bright",
       "Lucidabright",
