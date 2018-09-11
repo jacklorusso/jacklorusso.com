@@ -1480,28 +1480,8 @@ button,
   clear: both;
 }
 
-.font-forma-banner {
-  font-family: FormaDJRBanner;
-}
-
-.font-forma-display {
-  font-family: FormaDJRDisplay;
-}
-
-.font-forma-deck {
-  font-family: FormaDJRDeck;
-}
-
-.font-forma-text {
-  font-family: FormaDJRText;
-}
-
-.font-forma-micro {
-  font-family: FormaDJRMicro;
-}
-
 .font-sans {
-  font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Phantom Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .font-serif {
@@ -1512,36 +1492,52 @@ button,
   font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
-.font-normal {
+.font-400 {
   font-weight: 400;
 }
 
-.font-medium {
+.font-500 {
   font-weight: 500;
 }
 
-.font-semibold {
+.font-600 {
   font-weight: 600;
 }
 
-.hover\:font-light:hover {
-  font-weight: 300;
+.font-700 {
+  font-weight: 700;
 }
 
-.hover\:font-normal:hover {
+.font-800 {
+  font-weight: 800;
+}
+
+.font-900 {
+  font-weight: 900;
+}
+
+.hover\:font-400:hover {
   font-weight: 400;
 }
 
-.hover\:font-medium:hover {
+.hover\:font-500:hover {
   font-weight: 500;
 }
 
-.hover\:font-semibold:hover {
+.hover\:font-600:hover {
   font-weight: 600;
+}
+
+.hover\:font-700:hover {
+  font-weight: 700;
+}
+
+.hover\:font-800:hover {
+  font-weight: 800;
+}
+
+.hover\:font-900:hover {
+  font-weight: 900;
 }
 
 .h-80 {
@@ -1697,6 +1693,14 @@ button,
 }
 
 .h-screen {
+  height: 100vw;
+}
+
+.h-80vh {
+  height: 80vh;
+}
+
+.h-100vh {
   height: 100vh;
 }
 
@@ -1869,6 +1873,14 @@ button,
 }
 
 .m-screen {
+  margin: 100vw;
+}
+
+.m-80vh {
+  margin: 80vh;
+}
+
+.m-100vh {
   margin: 100vh;
 }
 
@@ -2253,11 +2265,31 @@ button,
 }
 
 .my-screen {
+  margin-top: 100vw;
+  margin-bottom: 100vw;
+}
+
+.mx-screen {
+  margin-left: 100vw;
+  margin-right: 100vw;
+}
+
+.my-80vh {
+  margin-top: 80vh;
+  margin-bottom: 80vh;
+}
+
+.mx-80vh {
+  margin-left: 80vh;
+  margin-right: 80vh;
+}
+
+.my-100vh {
   margin-top: 100vh;
   margin-bottom: 100vh;
 }
 
-.mx-screen {
+.mx-100vh {
   margin-left: 100vh;
   margin-right: 100vh;
 }
@@ -2871,18 +2903,50 @@ button,
 }
 
 .mt-screen {
-  margin-top: 100vh;
+  margin-top: 100vw;
 }
 
 .mr-screen {
-  margin-right: 100vh;
+  margin-right: 100vw;
 }
 
 .mb-screen {
-  margin-bottom: 100vh;
+  margin-bottom: 100vw;
 }
 
 .ml-screen {
+  margin-left: 100vw;
+}
+
+.mt-80vh {
+  margin-top: 80vh;
+}
+
+.mr-80vh {
+  margin-right: 80vh;
+}
+
+.mb-80vh {
+  margin-bottom: 80vh;
+}
+
+.ml-80vh {
+  margin-left: 80vh;
+}
+
+.mt-100vh {
+  margin-top: 100vh;
+}
+
+.mr-100vh {
+  margin-right: 100vh;
+}
+
+.mb-100vh {
+  margin-bottom: 100vh;
+}
+
+.ml-100vh {
   margin-left: 100vh;
 }
 
@@ -3047,6 +3111,14 @@ button,
 }
 
 .max-w-screen {
+  max-width: 100vw;
+}
+
+.max-w-80vh {
+  max-width: 80vh;
+}
+
+.max-w-100vh {
   max-width: 100vh;
 }
 
@@ -3223,6 +3295,14 @@ button,
 }
 
 .-m-screen {
+  margin: -100vw;
+}
+
+.-m-80vh {
+  margin: -80vh;
+}
+
+.-m-100vh {
   margin: -100vh;
 }
 
@@ -3607,11 +3687,31 @@ button,
 }
 
 .-my-screen {
+  margin-top: -100vw;
+  margin-bottom: -100vw;
+}
+
+.-mx-screen {
+  margin-left: -100vw;
+  margin-right: -100vw;
+}
+
+.-my-80vh {
+  margin-top: -80vh;
+  margin-bottom: -80vh;
+}
+
+.-mx-80vh {
+  margin-left: -80vh;
+  margin-right: -80vh;
+}
+
+.-my-100vh {
   margin-top: -100vh;
   margin-bottom: -100vh;
 }
 
-.-mx-screen {
+.-mx-100vh {
   margin-left: -100vh;
   margin-right: -100vh;
 }
@@ -4225,18 +4325,50 @@ button,
 }
 
 .-mt-screen {
-  margin-top: -100vh;
+  margin-top: -100vw;
 }
 
 .-mr-screen {
-  margin-right: -100vh;
+  margin-right: -100vw;
 }
 
 .-mb-screen {
-  margin-bottom: -100vh;
+  margin-bottom: -100vw;
 }
 
 .-ml-screen {
+  margin-left: -100vw;
+}
+
+.-mt-80vh {
+  margin-top: -80vh;
+}
+
+.-mr-80vh {
+  margin-right: -80vh;
+}
+
+.-mb-80vh {
+  margin-bottom: -80vh;
+}
+
+.-ml-80vh {
+  margin-left: -80vh;
+}
+
+.-mt-100vh {
+  margin-top: -100vh;
+}
+
+.-mr-100vh {
+  margin-right: -100vh;
+}
+
+.-mb-100vh {
+  margin-bottom: -100vh;
+}
+
+.-ml-100vh {
   margin-left: -100vh;
 }
 
@@ -4453,6 +4585,14 @@ button,
 }
 
 .p-screen {
+  padding: 100vw;
+}
+
+.p-80vh {
+  padding: 80vh;
+}
+
+.p-100vh {
   padding: 100vh;
 }
 
@@ -4837,11 +4977,31 @@ button,
 }
 
 .py-screen {
+  padding-top: 100vw;
+  padding-bottom: 100vw;
+}
+
+.px-screen {
+  padding-left: 100vw;
+  padding-right: 100vw;
+}
+
+.py-80vh {
+  padding-top: 80vh;
+  padding-bottom: 80vh;
+}
+
+.px-80vh {
+  padding-left: 80vh;
+  padding-right: 80vh;
+}
+
+.py-100vh {
   padding-top: 100vh;
   padding-bottom: 100vh;
 }
 
-.px-screen {
+.px-100vh {
   padding-left: 100vh;
   padding-right: 100vh;
 }
@@ -5455,18 +5615,50 @@ button,
 }
 
 .pt-screen {
-  padding-top: 100vh;
+  padding-top: 100vw;
 }
 
 .pr-screen {
-  padding-right: 100vh;
+  padding-right: 100vw;
 }
 
 .pb-screen {
-  padding-bottom: 100vh;
+  padding-bottom: 100vw;
 }
 
 .pl-screen {
+  padding-left: 100vw;
+}
+
+.pt-80vh {
+  padding-top: 80vh;
+}
+
+.pr-80vh {
+  padding-right: 80vh;
+}
+
+.pb-80vh {
+  padding-bottom: 80vh;
+}
+
+.pl-80vh {
+  padding-left: 80vh;
+}
+
+.pt-100vh {
+  padding-top: 100vh;
+}
+
+.pr-100vh {
+  padding-right: 100vh;
+}
+
+.pb-100vh {
+  padding-bottom: 100vh;
+}
+
+.pl-100vh {
   padding-left: 100vh;
 }
 
@@ -6045,6 +6237,14 @@ button,
 }
 
 .w-screen {
+  width: 100vw;
+}
+
+.w-80vh {
+  width: 80vh;
+}
+
+.w-100vh {
   width: 100vh;
 }
 
@@ -6082,6 +6282,17 @@ html {
   font-size: 18px;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+  font-family: "Phantom Sans", sans-serif;
+  font-variation-settings: "wght" 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-variation-settings: "wght" 400;
 }
 
 a {
@@ -6090,10 +6301,11 @@ a {
   transition: all 100ms cubic-bezier(.4, 0, .2, 1);
   border-bottom: 1px solid #e0d6eb;
   box-shadow: inset 0 -2px 0 0 #e0d6eb;
+  font-variation-settings: inherit;
 }
 
 a:hover {
-  /* background: #e0d6eb; */
+  background: #e0d6eb;
 }
 
 hr {
@@ -6910,28 +7122,8 @@ hr {
     clear: both;
   }
 
-  .sm\:font-forma-banner {
-    font-family: FormaDJRBanner;
-  }
-
-  .sm\:font-forma-display {
-    font-family: FormaDJRDisplay;
-  }
-
-  .sm\:font-forma-deck {
-    font-family: FormaDJRDeck;
-  }
-
-  .sm\:font-forma-text {
-    font-family: FormaDJRText;
-  }
-
-  .sm\:font-forma-micro {
-    font-family: FormaDJRMicro;
-  }
-
   .sm\:font-sans {
-    font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Phantom Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-serif {
@@ -6942,36 +7134,52 @@ hr {
     font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
-  .sm\:font-light {
-    font-weight: 300;
-  }
-
-  .sm\:font-normal {
+  .sm\:font-400 {
     font-weight: 400;
   }
 
-  .sm\:font-medium {
+  .sm\:font-500 {
     font-weight: 500;
   }
 
-  .sm\:font-semibold {
+  .sm\:font-600 {
     font-weight: 600;
   }
 
-  .sm\:hover\:font-light:hover {
-    font-weight: 300;
+  .sm\:font-700 {
+    font-weight: 700;
   }
 
-  .sm\:hover\:font-normal:hover {
+  .sm\:font-800 {
+    font-weight: 800;
+  }
+
+  .sm\:font-900 {
+    font-weight: 900;
+  }
+
+  .sm\:hover\:font-400:hover {
     font-weight: 400;
   }
 
-  .sm\:hover\:font-medium:hover {
+  .sm\:hover\:font-500:hover {
     font-weight: 500;
   }
 
-  .sm\:hover\:font-semibold:hover {
+  .sm\:hover\:font-600:hover {
     font-weight: 600;
+  }
+
+  .sm\:hover\:font-700:hover {
+    font-weight: 700;
+  }
+
+  .sm\:hover\:font-800:hover {
+    font-weight: 800;
+  }
+
+  .sm\:hover\:font-900:hover {
+    font-weight: 900;
   }
 
   .sm\:h-80 {
@@ -7127,6 +7335,14 @@ hr {
   }
 
   .sm\:h-screen {
+    height: 100vw;
+  }
+
+  .sm\:h-80vh {
+    height: 80vh;
+  }
+
+  .sm\:h-100vh {
     height: 100vh;
   }
 
@@ -7299,6 +7515,14 @@ hr {
   }
 
   .sm\:m-screen {
+    margin: 100vw;
+  }
+
+  .sm\:m-80vh {
+    margin: 80vh;
+  }
+
+  .sm\:m-100vh {
     margin: 100vh;
   }
 
@@ -7683,11 +7907,31 @@ hr {
   }
 
   .sm\:my-screen {
+    margin-top: 100vw;
+    margin-bottom: 100vw;
+  }
+
+  .sm\:mx-screen {
+    margin-left: 100vw;
+    margin-right: 100vw;
+  }
+
+  .sm\:my-80vh {
+    margin-top: 80vh;
+    margin-bottom: 80vh;
+  }
+
+  .sm\:mx-80vh {
+    margin-left: 80vh;
+    margin-right: 80vh;
+  }
+
+  .sm\:my-100vh {
     margin-top: 100vh;
     margin-bottom: 100vh;
   }
 
-  .sm\:mx-screen {
+  .sm\:mx-100vh {
     margin-left: 100vh;
     margin-right: 100vh;
   }
@@ -8301,18 +8545,50 @@ hr {
   }
 
   .sm\:mt-screen {
-    margin-top: 100vh;
+    margin-top: 100vw;
   }
 
   .sm\:mr-screen {
-    margin-right: 100vh;
+    margin-right: 100vw;
   }
 
   .sm\:mb-screen {
-    margin-bottom: 100vh;
+    margin-bottom: 100vw;
   }
 
   .sm\:ml-screen {
+    margin-left: 100vw;
+  }
+
+  .sm\:mt-80vh {
+    margin-top: 80vh;
+  }
+
+  .sm\:mr-80vh {
+    margin-right: 80vh;
+  }
+
+  .sm\:mb-80vh {
+    margin-bottom: 80vh;
+  }
+
+  .sm\:ml-80vh {
+    margin-left: 80vh;
+  }
+
+  .sm\:mt-100vh {
+    margin-top: 100vh;
+  }
+
+  .sm\:mr-100vh {
+    margin-right: 100vh;
+  }
+
+  .sm\:mb-100vh {
+    margin-bottom: 100vh;
+  }
+
+  .sm\:ml-100vh {
     margin-left: 100vh;
   }
 
@@ -8477,6 +8753,14 @@ hr {
   }
 
   .sm\:max-w-screen {
+    max-width: 100vw;
+  }
+
+  .sm\:max-w-80vh {
+    max-width: 80vh;
+  }
+
+  .sm\:max-w-100vh {
     max-width: 100vh;
   }
 
@@ -8653,6 +8937,14 @@ hr {
   }
 
   .sm\:-m-screen {
+    margin: -100vw;
+  }
+
+  .sm\:-m-80vh {
+    margin: -80vh;
+  }
+
+  .sm\:-m-100vh {
     margin: -100vh;
   }
 
@@ -9037,11 +9329,31 @@ hr {
   }
 
   .sm\:-my-screen {
+    margin-top: -100vw;
+    margin-bottom: -100vw;
+  }
+
+  .sm\:-mx-screen {
+    margin-left: -100vw;
+    margin-right: -100vw;
+  }
+
+  .sm\:-my-80vh {
+    margin-top: -80vh;
+    margin-bottom: -80vh;
+  }
+
+  .sm\:-mx-80vh {
+    margin-left: -80vh;
+    margin-right: -80vh;
+  }
+
+  .sm\:-my-100vh {
     margin-top: -100vh;
     margin-bottom: -100vh;
   }
 
-  .sm\:-mx-screen {
+  .sm\:-mx-100vh {
     margin-left: -100vh;
     margin-right: -100vh;
   }
@@ -9655,18 +9967,50 @@ hr {
   }
 
   .sm\:-mt-screen {
-    margin-top: -100vh;
+    margin-top: -100vw;
   }
 
   .sm\:-mr-screen {
-    margin-right: -100vh;
+    margin-right: -100vw;
   }
 
   .sm\:-mb-screen {
-    margin-bottom: -100vh;
+    margin-bottom: -100vw;
   }
 
   .sm\:-ml-screen {
+    margin-left: -100vw;
+  }
+
+  .sm\:-mt-80vh {
+    margin-top: -80vh;
+  }
+
+  .sm\:-mr-80vh {
+    margin-right: -80vh;
+  }
+
+  .sm\:-mb-80vh {
+    margin-bottom: -80vh;
+  }
+
+  .sm\:-ml-80vh {
+    margin-left: -80vh;
+  }
+
+  .sm\:-mt-100vh {
+    margin-top: -100vh;
+  }
+
+  .sm\:-mr-100vh {
+    margin-right: -100vh;
+  }
+
+  .sm\:-mb-100vh {
+    margin-bottom: -100vh;
+  }
+
+  .sm\:-ml-100vh {
     margin-left: -100vh;
   }
 
@@ -9883,6 +10227,14 @@ hr {
   }
 
   .sm\:p-screen {
+    padding: 100vw;
+  }
+
+  .sm\:p-80vh {
+    padding: 80vh;
+  }
+
+  .sm\:p-100vh {
     padding: 100vh;
   }
 
@@ -10267,11 +10619,31 @@ hr {
   }
 
   .sm\:py-screen {
+    padding-top: 100vw;
+    padding-bottom: 100vw;
+  }
+
+  .sm\:px-screen {
+    padding-left: 100vw;
+    padding-right: 100vw;
+  }
+
+  .sm\:py-80vh {
+    padding-top: 80vh;
+    padding-bottom: 80vh;
+  }
+
+  .sm\:px-80vh {
+    padding-left: 80vh;
+    padding-right: 80vh;
+  }
+
+  .sm\:py-100vh {
     padding-top: 100vh;
     padding-bottom: 100vh;
   }
 
-  .sm\:px-screen {
+  .sm\:px-100vh {
     padding-left: 100vh;
     padding-right: 100vh;
   }
@@ -10885,18 +11257,50 @@ hr {
   }
 
   .sm\:pt-screen {
-    padding-top: 100vh;
+    padding-top: 100vw;
   }
 
   .sm\:pr-screen {
-    padding-right: 100vh;
+    padding-right: 100vw;
   }
 
   .sm\:pb-screen {
-    padding-bottom: 100vh;
+    padding-bottom: 100vw;
   }
 
   .sm\:pl-screen {
+    padding-left: 100vw;
+  }
+
+  .sm\:pt-80vh {
+    padding-top: 80vh;
+  }
+
+  .sm\:pr-80vh {
+    padding-right: 80vh;
+  }
+
+  .sm\:pb-80vh {
+    padding-bottom: 80vh;
+  }
+
+  .sm\:pl-80vh {
+    padding-left: 80vh;
+  }
+
+  .sm\:pt-100vh {
+    padding-top: 100vh;
+  }
+
+  .sm\:pr-100vh {
+    padding-right: 100vh;
+  }
+
+  .sm\:pb-100vh {
+    padding-bottom: 100vh;
+  }
+
+  .sm\:pl-100vh {
     padding-left: 100vh;
   }
 
@@ -11467,6 +11871,14 @@ hr {
   }
 
   .sm\:w-screen {
+    width: 100vw;
+  }
+
+  .sm\:w-80vh {
+    width: 80vh;
+  }
+
+  .sm\:w-100vh {
     width: 100vh;
   }
 
@@ -12299,28 +12711,8 @@ hr {
     clear: both;
   }
 
-  .md\:font-forma-banner {
-    font-family: FormaDJRBanner;
-  }
-
-  .md\:font-forma-display {
-    font-family: FormaDJRDisplay;
-  }
-
-  .md\:font-forma-deck {
-    font-family: FormaDJRDeck;
-  }
-
-  .md\:font-forma-text {
-    font-family: FormaDJRText;
-  }
-
-  .md\:font-forma-micro {
-    font-family: FormaDJRMicro;
-  }
-
   .md\:font-sans {
-    font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Phantom Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .md\:font-serif {
@@ -12331,36 +12723,52 @@ hr {
     font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
-  .md\:font-light {
-    font-weight: 300;
-  }
-
-  .md\:font-normal {
+  .md\:font-400 {
     font-weight: 400;
   }
 
-  .md\:font-medium {
+  .md\:font-500 {
     font-weight: 500;
   }
 
-  .md\:font-semibold {
+  .md\:font-600 {
     font-weight: 600;
   }
 
-  .md\:hover\:font-light:hover {
-    font-weight: 300;
+  .md\:font-700 {
+    font-weight: 700;
   }
 
-  .md\:hover\:font-normal:hover {
+  .md\:font-800 {
+    font-weight: 800;
+  }
+
+  .md\:font-900 {
+    font-weight: 900;
+  }
+
+  .md\:hover\:font-400:hover {
     font-weight: 400;
   }
 
-  .md\:hover\:font-medium:hover {
+  .md\:hover\:font-500:hover {
     font-weight: 500;
   }
 
-  .md\:hover\:font-semibold:hover {
+  .md\:hover\:font-600:hover {
     font-weight: 600;
+  }
+
+  .md\:hover\:font-700:hover {
+    font-weight: 700;
+  }
+
+  .md\:hover\:font-800:hover {
+    font-weight: 800;
+  }
+
+  .md\:hover\:font-900:hover {
+    font-weight: 900;
   }
 
   .md\:h-80 {
@@ -12516,6 +12924,14 @@ hr {
   }
 
   .md\:h-screen {
+    height: 100vw;
+  }
+
+  .md\:h-80vh {
+    height: 80vh;
+  }
+
+  .md\:h-100vh {
     height: 100vh;
   }
 
@@ -12688,6 +13104,14 @@ hr {
   }
 
   .md\:m-screen {
+    margin: 100vw;
+  }
+
+  .md\:m-80vh {
+    margin: 80vh;
+  }
+
+  .md\:m-100vh {
     margin: 100vh;
   }
 
@@ -13072,11 +13496,31 @@ hr {
   }
 
   .md\:my-screen {
+    margin-top: 100vw;
+    margin-bottom: 100vw;
+  }
+
+  .md\:mx-screen {
+    margin-left: 100vw;
+    margin-right: 100vw;
+  }
+
+  .md\:my-80vh {
+    margin-top: 80vh;
+    margin-bottom: 80vh;
+  }
+
+  .md\:mx-80vh {
+    margin-left: 80vh;
+    margin-right: 80vh;
+  }
+
+  .md\:my-100vh {
     margin-top: 100vh;
     margin-bottom: 100vh;
   }
 
-  .md\:mx-screen {
+  .md\:mx-100vh {
     margin-left: 100vh;
     margin-right: 100vh;
   }
@@ -13690,18 +14134,50 @@ hr {
   }
 
   .md\:mt-screen {
-    margin-top: 100vh;
+    margin-top: 100vw;
   }
 
   .md\:mr-screen {
-    margin-right: 100vh;
+    margin-right: 100vw;
   }
 
   .md\:mb-screen {
-    margin-bottom: 100vh;
+    margin-bottom: 100vw;
   }
 
   .md\:ml-screen {
+    margin-left: 100vw;
+  }
+
+  .md\:mt-80vh {
+    margin-top: 80vh;
+  }
+
+  .md\:mr-80vh {
+    margin-right: 80vh;
+  }
+
+  .md\:mb-80vh {
+    margin-bottom: 80vh;
+  }
+
+  .md\:ml-80vh {
+    margin-left: 80vh;
+  }
+
+  .md\:mt-100vh {
+    margin-top: 100vh;
+  }
+
+  .md\:mr-100vh {
+    margin-right: 100vh;
+  }
+
+  .md\:mb-100vh {
+    margin-bottom: 100vh;
+  }
+
+  .md\:ml-100vh {
     margin-left: 100vh;
   }
 
@@ -13866,6 +14342,14 @@ hr {
   }
 
   .md\:max-w-screen {
+    max-width: 100vw;
+  }
+
+  .md\:max-w-80vh {
+    max-width: 80vh;
+  }
+
+  .md\:max-w-100vh {
     max-width: 100vh;
   }
 
@@ -14042,6 +14526,14 @@ hr {
   }
 
   .md\:-m-screen {
+    margin: -100vw;
+  }
+
+  .md\:-m-80vh {
+    margin: -80vh;
+  }
+
+  .md\:-m-100vh {
     margin: -100vh;
   }
 
@@ -14426,11 +14918,31 @@ hr {
   }
 
   .md\:-my-screen {
+    margin-top: -100vw;
+    margin-bottom: -100vw;
+  }
+
+  .md\:-mx-screen {
+    margin-left: -100vw;
+    margin-right: -100vw;
+  }
+
+  .md\:-my-80vh {
+    margin-top: -80vh;
+    margin-bottom: -80vh;
+  }
+
+  .md\:-mx-80vh {
+    margin-left: -80vh;
+    margin-right: -80vh;
+  }
+
+  .md\:-my-100vh {
     margin-top: -100vh;
     margin-bottom: -100vh;
   }
 
-  .md\:-mx-screen {
+  .md\:-mx-100vh {
     margin-left: -100vh;
     margin-right: -100vh;
   }
@@ -15044,18 +15556,50 @@ hr {
   }
 
   .md\:-mt-screen {
-    margin-top: -100vh;
+    margin-top: -100vw;
   }
 
   .md\:-mr-screen {
-    margin-right: -100vh;
+    margin-right: -100vw;
   }
 
   .md\:-mb-screen {
-    margin-bottom: -100vh;
+    margin-bottom: -100vw;
   }
 
   .md\:-ml-screen {
+    margin-left: -100vw;
+  }
+
+  .md\:-mt-80vh {
+    margin-top: -80vh;
+  }
+
+  .md\:-mr-80vh {
+    margin-right: -80vh;
+  }
+
+  .md\:-mb-80vh {
+    margin-bottom: -80vh;
+  }
+
+  .md\:-ml-80vh {
+    margin-left: -80vh;
+  }
+
+  .md\:-mt-100vh {
+    margin-top: -100vh;
+  }
+
+  .md\:-mr-100vh {
+    margin-right: -100vh;
+  }
+
+  .md\:-mb-100vh {
+    margin-bottom: -100vh;
+  }
+
+  .md\:-ml-100vh {
     margin-left: -100vh;
   }
 
@@ -15272,6 +15816,14 @@ hr {
   }
 
   .md\:p-screen {
+    padding: 100vw;
+  }
+
+  .md\:p-80vh {
+    padding: 80vh;
+  }
+
+  .md\:p-100vh {
     padding: 100vh;
   }
 
@@ -15656,11 +16208,31 @@ hr {
   }
 
   .md\:py-screen {
+    padding-top: 100vw;
+    padding-bottom: 100vw;
+  }
+
+  .md\:px-screen {
+    padding-left: 100vw;
+    padding-right: 100vw;
+  }
+
+  .md\:py-80vh {
+    padding-top: 80vh;
+    padding-bottom: 80vh;
+  }
+
+  .md\:px-80vh {
+    padding-left: 80vh;
+    padding-right: 80vh;
+  }
+
+  .md\:py-100vh {
     padding-top: 100vh;
     padding-bottom: 100vh;
   }
 
-  .md\:px-screen {
+  .md\:px-100vh {
     padding-left: 100vh;
     padding-right: 100vh;
   }
@@ -16274,18 +16846,50 @@ hr {
   }
 
   .md\:pt-screen {
-    padding-top: 100vh;
+    padding-top: 100vw;
   }
 
   .md\:pr-screen {
-    padding-right: 100vh;
+    padding-right: 100vw;
   }
 
   .md\:pb-screen {
-    padding-bottom: 100vh;
+    padding-bottom: 100vw;
   }
 
   .md\:pl-screen {
+    padding-left: 100vw;
+  }
+
+  .md\:pt-80vh {
+    padding-top: 80vh;
+  }
+
+  .md\:pr-80vh {
+    padding-right: 80vh;
+  }
+
+  .md\:pb-80vh {
+    padding-bottom: 80vh;
+  }
+
+  .md\:pl-80vh {
+    padding-left: 80vh;
+  }
+
+  .md\:pt-100vh {
+    padding-top: 100vh;
+  }
+
+  .md\:pr-100vh {
+    padding-right: 100vh;
+  }
+
+  .md\:pb-100vh {
+    padding-bottom: 100vh;
+  }
+
+  .md\:pl-100vh {
     padding-left: 100vh;
   }
 
@@ -16856,6 +17460,14 @@ hr {
   }
 
   .md\:w-screen {
+    width: 100vw;
+  }
+
+  .md\:w-80vh {
+    width: 80vh;
+  }
+
+  .md\:w-100vh {
     width: 100vh;
   }
 
@@ -17688,28 +18300,8 @@ hr {
     clear: both;
   }
 
-  .lg\:font-forma-banner {
-    font-family: FormaDJRBanner;
-  }
-
-  .lg\:font-forma-display {
-    font-family: FormaDJRDisplay;
-  }
-
-  .lg\:font-forma-deck {
-    font-family: FormaDJRDeck;
-  }
-
-  .lg\:font-forma-text {
-    font-family: FormaDJRText;
-  }
-
-  .lg\:font-forma-micro {
-    font-family: FormaDJRMicro;
-  }
-
   .lg\:font-sans {
-    font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Phantom Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-serif {
@@ -17720,36 +18312,52 @@ hr {
     font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
-  .lg\:font-light {
-    font-weight: 300;
-  }
-
-  .lg\:font-normal {
+  .lg\:font-400 {
     font-weight: 400;
   }
 
-  .lg\:font-medium {
+  .lg\:font-500 {
     font-weight: 500;
   }
 
-  .lg\:font-semibold {
+  .lg\:font-600 {
     font-weight: 600;
   }
 
-  .lg\:hover\:font-light:hover {
-    font-weight: 300;
+  .lg\:font-700 {
+    font-weight: 700;
   }
 
-  .lg\:hover\:font-normal:hover {
+  .lg\:font-800 {
+    font-weight: 800;
+  }
+
+  .lg\:font-900 {
+    font-weight: 900;
+  }
+
+  .lg\:hover\:font-400:hover {
     font-weight: 400;
   }
 
-  .lg\:hover\:font-medium:hover {
+  .lg\:hover\:font-500:hover {
     font-weight: 500;
   }
 
-  .lg\:hover\:font-semibold:hover {
+  .lg\:hover\:font-600:hover {
     font-weight: 600;
+  }
+
+  .lg\:hover\:font-700:hover {
+    font-weight: 700;
+  }
+
+  .lg\:hover\:font-800:hover {
+    font-weight: 800;
+  }
+
+  .lg\:hover\:font-900:hover {
+    font-weight: 900;
   }
 
   .lg\:h-80 {
@@ -17905,6 +18513,14 @@ hr {
   }
 
   .lg\:h-screen {
+    height: 100vw;
+  }
+
+  .lg\:h-80vh {
+    height: 80vh;
+  }
+
+  .lg\:h-100vh {
     height: 100vh;
   }
 
@@ -18077,6 +18693,14 @@ hr {
   }
 
   .lg\:m-screen {
+    margin: 100vw;
+  }
+
+  .lg\:m-80vh {
+    margin: 80vh;
+  }
+
+  .lg\:m-100vh {
     margin: 100vh;
   }
 
@@ -18461,11 +19085,31 @@ hr {
   }
 
   .lg\:my-screen {
+    margin-top: 100vw;
+    margin-bottom: 100vw;
+  }
+
+  .lg\:mx-screen {
+    margin-left: 100vw;
+    margin-right: 100vw;
+  }
+
+  .lg\:my-80vh {
+    margin-top: 80vh;
+    margin-bottom: 80vh;
+  }
+
+  .lg\:mx-80vh {
+    margin-left: 80vh;
+    margin-right: 80vh;
+  }
+
+  .lg\:my-100vh {
     margin-top: 100vh;
     margin-bottom: 100vh;
   }
 
-  .lg\:mx-screen {
+  .lg\:mx-100vh {
     margin-left: 100vh;
     margin-right: 100vh;
   }
@@ -19079,18 +19723,50 @@ hr {
   }
 
   .lg\:mt-screen {
-    margin-top: 100vh;
+    margin-top: 100vw;
   }
 
   .lg\:mr-screen {
-    margin-right: 100vh;
+    margin-right: 100vw;
   }
 
   .lg\:mb-screen {
-    margin-bottom: 100vh;
+    margin-bottom: 100vw;
   }
 
   .lg\:ml-screen {
+    margin-left: 100vw;
+  }
+
+  .lg\:mt-80vh {
+    margin-top: 80vh;
+  }
+
+  .lg\:mr-80vh {
+    margin-right: 80vh;
+  }
+
+  .lg\:mb-80vh {
+    margin-bottom: 80vh;
+  }
+
+  .lg\:ml-80vh {
+    margin-left: 80vh;
+  }
+
+  .lg\:mt-100vh {
+    margin-top: 100vh;
+  }
+
+  .lg\:mr-100vh {
+    margin-right: 100vh;
+  }
+
+  .lg\:mb-100vh {
+    margin-bottom: 100vh;
+  }
+
+  .lg\:ml-100vh {
     margin-left: 100vh;
   }
 
@@ -19255,6 +19931,14 @@ hr {
   }
 
   .lg\:max-w-screen {
+    max-width: 100vw;
+  }
+
+  .lg\:max-w-80vh {
+    max-width: 80vh;
+  }
+
+  .lg\:max-w-100vh {
     max-width: 100vh;
   }
 
@@ -19431,6 +20115,14 @@ hr {
   }
 
   .lg\:-m-screen {
+    margin: -100vw;
+  }
+
+  .lg\:-m-80vh {
+    margin: -80vh;
+  }
+
+  .lg\:-m-100vh {
     margin: -100vh;
   }
 
@@ -19815,11 +20507,31 @@ hr {
   }
 
   .lg\:-my-screen {
+    margin-top: -100vw;
+    margin-bottom: -100vw;
+  }
+
+  .lg\:-mx-screen {
+    margin-left: -100vw;
+    margin-right: -100vw;
+  }
+
+  .lg\:-my-80vh {
+    margin-top: -80vh;
+    margin-bottom: -80vh;
+  }
+
+  .lg\:-mx-80vh {
+    margin-left: -80vh;
+    margin-right: -80vh;
+  }
+
+  .lg\:-my-100vh {
     margin-top: -100vh;
     margin-bottom: -100vh;
   }
 
-  .lg\:-mx-screen {
+  .lg\:-mx-100vh {
     margin-left: -100vh;
     margin-right: -100vh;
   }
@@ -20433,18 +21145,50 @@ hr {
   }
 
   .lg\:-mt-screen {
-    margin-top: -100vh;
+    margin-top: -100vw;
   }
 
   .lg\:-mr-screen {
-    margin-right: -100vh;
+    margin-right: -100vw;
   }
 
   .lg\:-mb-screen {
-    margin-bottom: -100vh;
+    margin-bottom: -100vw;
   }
 
   .lg\:-ml-screen {
+    margin-left: -100vw;
+  }
+
+  .lg\:-mt-80vh {
+    margin-top: -80vh;
+  }
+
+  .lg\:-mr-80vh {
+    margin-right: -80vh;
+  }
+
+  .lg\:-mb-80vh {
+    margin-bottom: -80vh;
+  }
+
+  .lg\:-ml-80vh {
+    margin-left: -80vh;
+  }
+
+  .lg\:-mt-100vh {
+    margin-top: -100vh;
+  }
+
+  .lg\:-mr-100vh {
+    margin-right: -100vh;
+  }
+
+  .lg\:-mb-100vh {
+    margin-bottom: -100vh;
+  }
+
+  .lg\:-ml-100vh {
     margin-left: -100vh;
   }
 
@@ -20661,6 +21405,14 @@ hr {
   }
 
   .lg\:p-screen {
+    padding: 100vw;
+  }
+
+  .lg\:p-80vh {
+    padding: 80vh;
+  }
+
+  .lg\:p-100vh {
     padding: 100vh;
   }
 
@@ -21045,11 +21797,31 @@ hr {
   }
 
   .lg\:py-screen {
+    padding-top: 100vw;
+    padding-bottom: 100vw;
+  }
+
+  .lg\:px-screen {
+    padding-left: 100vw;
+    padding-right: 100vw;
+  }
+
+  .lg\:py-80vh {
+    padding-top: 80vh;
+    padding-bottom: 80vh;
+  }
+
+  .lg\:px-80vh {
+    padding-left: 80vh;
+    padding-right: 80vh;
+  }
+
+  .lg\:py-100vh {
     padding-top: 100vh;
     padding-bottom: 100vh;
   }
 
-  .lg\:px-screen {
+  .lg\:px-100vh {
     padding-left: 100vh;
     padding-right: 100vh;
   }
@@ -21663,18 +22435,50 @@ hr {
   }
 
   .lg\:pt-screen {
-    padding-top: 100vh;
+    padding-top: 100vw;
   }
 
   .lg\:pr-screen {
-    padding-right: 100vh;
+    padding-right: 100vw;
   }
 
   .lg\:pb-screen {
-    padding-bottom: 100vh;
+    padding-bottom: 100vw;
   }
 
   .lg\:pl-screen {
+    padding-left: 100vw;
+  }
+
+  .lg\:pt-80vh {
+    padding-top: 80vh;
+  }
+
+  .lg\:pr-80vh {
+    padding-right: 80vh;
+  }
+
+  .lg\:pb-80vh {
+    padding-bottom: 80vh;
+  }
+
+  .lg\:pl-80vh {
+    padding-left: 80vh;
+  }
+
+  .lg\:pt-100vh {
+    padding-top: 100vh;
+  }
+
+  .lg\:pr-100vh {
+    padding-right: 100vh;
+  }
+
+  .lg\:pb-100vh {
+    padding-bottom: 100vh;
+  }
+
+  .lg\:pl-100vh {
     padding-left: 100vh;
   }
 
@@ -22245,6 +23049,14 @@ hr {
   }
 
   .lg\:w-screen {
+    width: 100vw;
+  }
+
+  .lg\:w-80vh {
+    width: 80vh;
+  }
+
+  .lg\:w-100vh {
     width: 100vh;
   }
 
@@ -23077,28 +23889,8 @@ hr {
     clear: both;
   }
 
-  .xl\:font-forma-banner {
-    font-family: FormaDJRBanner;
-  }
-
-  .xl\:font-forma-display {
-    font-family: FormaDJRDisplay;
-  }
-
-  .xl\:font-forma-deck {
-    font-family: FormaDJRDeck;
-  }
-
-  .xl\:font-forma-text {
-    font-family: FormaDJRText;
-  }
-
-  .xl\:font-forma-micro {
-    font-family: FormaDJRMicro;
-  }
-
   .xl\:font-sans {
-    font-family: FormaDJRMicro, IBM Plex Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: Phantom Sans, system-ui, BlinkMacSystem Font, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-serif {
@@ -23109,36 +23901,52 @@ hr {
     font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
-  .xl\:font-light {
-    font-weight: 300;
-  }
-
-  .xl\:font-normal {
+  .xl\:font-400 {
     font-weight: 400;
   }
 
-  .xl\:font-medium {
+  .xl\:font-500 {
     font-weight: 500;
   }
 
-  .xl\:font-semibold {
+  .xl\:font-600 {
     font-weight: 600;
   }
 
-  .xl\:hover\:font-light:hover {
-    font-weight: 300;
+  .xl\:font-700 {
+    font-weight: 700;
   }
 
-  .xl\:hover\:font-normal:hover {
+  .xl\:font-800 {
+    font-weight: 800;
+  }
+
+  .xl\:font-900 {
+    font-weight: 900;
+  }
+
+  .xl\:hover\:font-400:hover {
     font-weight: 400;
   }
 
-  .xl\:hover\:font-medium:hover {
+  .xl\:hover\:font-500:hover {
     font-weight: 500;
   }
 
-  .xl\:hover\:font-semibold:hover {
+  .xl\:hover\:font-600:hover {
     font-weight: 600;
+  }
+
+  .xl\:hover\:font-700:hover {
+    font-weight: 700;
+  }
+
+  .xl\:hover\:font-800:hover {
+    font-weight: 800;
+  }
+
+  .xl\:hover\:font-900:hover {
+    font-weight: 900;
   }
 
   .xl\:h-80 {
@@ -23294,6 +24102,14 @@ hr {
   }
 
   .xl\:h-screen {
+    height: 100vw;
+  }
+
+  .xl\:h-80vh {
+    height: 80vh;
+  }
+
+  .xl\:h-100vh {
     height: 100vh;
   }
 
@@ -23466,6 +24282,14 @@ hr {
   }
 
   .xl\:m-screen {
+    margin: 100vw;
+  }
+
+  .xl\:m-80vh {
+    margin: 80vh;
+  }
+
+  .xl\:m-100vh {
     margin: 100vh;
   }
 
@@ -23850,11 +24674,31 @@ hr {
   }
 
   .xl\:my-screen {
+    margin-top: 100vw;
+    margin-bottom: 100vw;
+  }
+
+  .xl\:mx-screen {
+    margin-left: 100vw;
+    margin-right: 100vw;
+  }
+
+  .xl\:my-80vh {
+    margin-top: 80vh;
+    margin-bottom: 80vh;
+  }
+
+  .xl\:mx-80vh {
+    margin-left: 80vh;
+    margin-right: 80vh;
+  }
+
+  .xl\:my-100vh {
     margin-top: 100vh;
     margin-bottom: 100vh;
   }
 
-  .xl\:mx-screen {
+  .xl\:mx-100vh {
     margin-left: 100vh;
     margin-right: 100vh;
   }
@@ -24468,18 +25312,50 @@ hr {
   }
 
   .xl\:mt-screen {
-    margin-top: 100vh;
+    margin-top: 100vw;
   }
 
   .xl\:mr-screen {
-    margin-right: 100vh;
+    margin-right: 100vw;
   }
 
   .xl\:mb-screen {
-    margin-bottom: 100vh;
+    margin-bottom: 100vw;
   }
 
   .xl\:ml-screen {
+    margin-left: 100vw;
+  }
+
+  .xl\:mt-80vh {
+    margin-top: 80vh;
+  }
+
+  .xl\:mr-80vh {
+    margin-right: 80vh;
+  }
+
+  .xl\:mb-80vh {
+    margin-bottom: 80vh;
+  }
+
+  .xl\:ml-80vh {
+    margin-left: 80vh;
+  }
+
+  .xl\:mt-100vh {
+    margin-top: 100vh;
+  }
+
+  .xl\:mr-100vh {
+    margin-right: 100vh;
+  }
+
+  .xl\:mb-100vh {
+    margin-bottom: 100vh;
+  }
+
+  .xl\:ml-100vh {
     margin-left: 100vh;
   }
 
@@ -24644,6 +25520,14 @@ hr {
   }
 
   .xl\:max-w-screen {
+    max-width: 100vw;
+  }
+
+  .xl\:max-w-80vh {
+    max-width: 80vh;
+  }
+
+  .xl\:max-w-100vh {
     max-width: 100vh;
   }
 
@@ -24820,6 +25704,14 @@ hr {
   }
 
   .xl\:-m-screen {
+    margin: -100vw;
+  }
+
+  .xl\:-m-80vh {
+    margin: -80vh;
+  }
+
+  .xl\:-m-100vh {
     margin: -100vh;
   }
 
@@ -25204,11 +26096,31 @@ hr {
   }
 
   .xl\:-my-screen {
+    margin-top: -100vw;
+    margin-bottom: -100vw;
+  }
+
+  .xl\:-mx-screen {
+    margin-left: -100vw;
+    margin-right: -100vw;
+  }
+
+  .xl\:-my-80vh {
+    margin-top: -80vh;
+    margin-bottom: -80vh;
+  }
+
+  .xl\:-mx-80vh {
+    margin-left: -80vh;
+    margin-right: -80vh;
+  }
+
+  .xl\:-my-100vh {
     margin-top: -100vh;
     margin-bottom: -100vh;
   }
 
-  .xl\:-mx-screen {
+  .xl\:-mx-100vh {
     margin-left: -100vh;
     margin-right: -100vh;
   }
@@ -25822,18 +26734,50 @@ hr {
   }
 
   .xl\:-mt-screen {
-    margin-top: -100vh;
+    margin-top: -100vw;
   }
 
   .xl\:-mr-screen {
-    margin-right: -100vh;
+    margin-right: -100vw;
   }
 
   .xl\:-mb-screen {
-    margin-bottom: -100vh;
+    margin-bottom: -100vw;
   }
 
   .xl\:-ml-screen {
+    margin-left: -100vw;
+  }
+
+  .xl\:-mt-80vh {
+    margin-top: -80vh;
+  }
+
+  .xl\:-mr-80vh {
+    margin-right: -80vh;
+  }
+
+  .xl\:-mb-80vh {
+    margin-bottom: -80vh;
+  }
+
+  .xl\:-ml-80vh {
+    margin-left: -80vh;
+  }
+
+  .xl\:-mt-100vh {
+    margin-top: -100vh;
+  }
+
+  .xl\:-mr-100vh {
+    margin-right: -100vh;
+  }
+
+  .xl\:-mb-100vh {
+    margin-bottom: -100vh;
+  }
+
+  .xl\:-ml-100vh {
     margin-left: -100vh;
   }
 
@@ -26050,6 +26994,14 @@ hr {
   }
 
   .xl\:p-screen {
+    padding: 100vw;
+  }
+
+  .xl\:p-80vh {
+    padding: 80vh;
+  }
+
+  .xl\:p-100vh {
     padding: 100vh;
   }
 
@@ -26434,11 +27386,31 @@ hr {
   }
 
   .xl\:py-screen {
+    padding-top: 100vw;
+    padding-bottom: 100vw;
+  }
+
+  .xl\:px-screen {
+    padding-left: 100vw;
+    padding-right: 100vw;
+  }
+
+  .xl\:py-80vh {
+    padding-top: 80vh;
+    padding-bottom: 80vh;
+  }
+
+  .xl\:px-80vh {
+    padding-left: 80vh;
+    padding-right: 80vh;
+  }
+
+  .xl\:py-100vh {
     padding-top: 100vh;
     padding-bottom: 100vh;
   }
 
-  .xl\:px-screen {
+  .xl\:px-100vh {
     padding-left: 100vh;
     padding-right: 100vh;
   }
@@ -27052,18 +28024,50 @@ hr {
   }
 
   .xl\:pt-screen {
-    padding-top: 100vh;
+    padding-top: 100vw;
   }
 
   .xl\:pr-screen {
-    padding-right: 100vh;
+    padding-right: 100vw;
   }
 
   .xl\:pb-screen {
-    padding-bottom: 100vh;
+    padding-bottom: 100vw;
   }
 
   .xl\:pl-screen {
+    padding-left: 100vw;
+  }
+
+  .xl\:pt-80vh {
+    padding-top: 80vh;
+  }
+
+  .xl\:pr-80vh {
+    padding-right: 80vh;
+  }
+
+  .xl\:pb-80vh {
+    padding-bottom: 80vh;
+  }
+
+  .xl\:pl-80vh {
+    padding-left: 80vh;
+  }
+
+  .xl\:pt-100vh {
+    padding-top: 100vh;
+  }
+
+  .xl\:pr-100vh {
+    padding-right: 100vh;
+  }
+
+  .xl\:pb-100vh {
+    padding-bottom: 100vh;
+  }
+
+  .xl\:pl-100vh {
     padding-left: 100vh;
   }
 
@@ -27634,6 +28638,14 @@ hr {
   }
 
   .xl\:w-screen {
+    width: 100vw;
+  }
+
+  .xl\:w-80vh {
+    width: 80vh;
+  }
+
+  .xl\:w-100vh {
     width: 100vh;
   }
 

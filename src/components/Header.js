@@ -11,26 +11,31 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-p2 max-w-p15 mx-auto w-full">
-      <Link to="/" className="flex items-center text-inherit py-base nav-link">
-        <svg
+    <header className="px-base md:px-0 flex flex-wrap items-center justify-between max-w-p15 py-m2 mx-auto font-normal ">
+      <Link
+        to="/"
+        className="text-foreground-faded nav-link hover:bg-background"
+      >
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          className="w-p2 md:w-p3 stroke-current"
+          className="w-p3"
         >
           <path
             fill="none"
+            stroke="#424242"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width=".803"
             d="M3.2,0.96 L14.2,0.96 L14.2,16.36 L3.2,16.36 L3.2,0.96 M6.5,4.26 L17.5,4.26 L17.5,19.66 L6.5,19.66 L6.5,4.26 M9.8,7.56 L20.8,7.56 L20.8,22.96 L9.8,22.96 L9.8,7.56"
             transform="rotate(90 12 11.96)"
           />
-        </svg>
+        </svg> */}
+        Jack Lo Russo
       </Link>
 
       <button
-        className="block md:hidden rounded text-foreground font-light p-base"
+        className="block md:hidden text-foreground-faded p-base font-normal"
         onClick={handleClick}
       >
         Menu
@@ -42,30 +47,18 @@ const Header = () => {
       >
         <Link
           to="/"
-          className="block md:inline-block no-underline text-inherit md:mr-p1"
+          className="block md:inline-block no-underline text-foreground-faded md:mr-p1 nav-link"
         >
           Home
         </Link>
         <Link
           to="/about"
-          className="block md:inline-block no-underline text-inherit md:mr-p1"
+          className="block md:inline-block no-underline text-foreground-faded md:mr-p1 nav-link"
         >
           About
         </Link>
-        {/* <a
-          href="https://twitter.com/lol_russo"
-          className="block md:inline-block no-underline text-inherit md:mr-base"
-        >
-          Twitter
-        </a>
-        <a
-          href="https://github.com/lol-russo"
-          className="block md:inline-block no-underline text-inherit"
-        >
-          GitHub
-        </a> */}
       </div>
-    </nav>
+    </header>
   );
 };
 

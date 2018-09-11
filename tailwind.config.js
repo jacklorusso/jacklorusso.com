@@ -151,14 +151,8 @@ module.exports = {
   */
 
   fonts: {
-    "forma-banner": "FormaDJRBanner",
-    "forma-display": "FormaDJRDisplay",
-    "forma-deck": "FormaDJRDeck",
-    "forma-text": "FormaDJRText",
-    "forma-micro": "FormaDJRMicro",
     sans: [
-      "FormaDJRMicro",
-      "IBM Plex Sans",
+      "Phantom Sans",
       "system-ui",
       "BlinkMacSystem Font",
       "-apple-system",
@@ -244,10 +238,12 @@ module.exports = {
   */
 
   fontWeights: {
-    light: 300,
-    normal: 400,
-    medium: 500,
-    semibold: 600
+    "400": 400,
+    "500": 500,
+    "600": 600,
+    "700": 700,
+    "800": 800,
+    "900": 900
   },
 
   /*
@@ -458,7 +454,8 @@ module.exports = {
     auto: "auto",
     px: "1px",
     full: "100%",
-    screen: "100vh"
+    "80vh": "80vh",
+    "100vh": "100vh"
   }),
 
   /*

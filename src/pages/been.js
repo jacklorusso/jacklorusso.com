@@ -5,13 +5,13 @@ import Section from "../components/Section";
 
 const AboutPage = () => (
   <Layout>
-    <Section>
-      <h1 className="my-p1 font-forma-display font-medium text-lg md:text-xl">
-        The places I've been to are highlighted; everything else is on my list.
+    <div className="my-p7">
+      <h1 className="my-p5 text-lg md:text-xl max-w-p14 mx-auto text-center">
+        The places I've been to are highlighted.
+        <br />
+        Everything else is on my list.
       </h1>
-    </Section>
-    <Section>
-      <p className="text-justify md:text-lg text-foreground-faded leading-tight">
+      <p className="text-justify md:text-lg text-foreground-faded leading-tight max-w-p14 mx-auto">
         Afghanistan <span className="text-foreground">Albania</span> Algeria
         Andorra Angola Antigua and Barbuda Argentina Armenia{" "}
         <span className="text-foreground">Australia</span> Austria Azerbaijan
@@ -66,7 +66,7 @@ const AboutPage = () => (
         <span className="text-foreground">Vietnam</span> Yemen
         Zambia&nbsp;Zimbabwe
       </p>
-    </Section>
+    </div>
   </Layout>
 );
 
