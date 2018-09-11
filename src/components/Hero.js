@@ -6,7 +6,7 @@ const Hero = props => {
   return (
     <section className="min-h-screen py-p2">
       <div className="max-w-p15 mx-auto px-base md:px-0">
-        <h1 className="text-4xl md:max-w-p14 mt-p8 mb-p4 font-medium leading-tight">
+        <h1 className="text-3xl md:text-4xl md:max-w-p14 mt-p8 mb-p4 font-medium leading-tight">
           A designer that&nbsp;codes.
           <br />
           An engineer that&nbsp;designs.
