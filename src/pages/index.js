@@ -13,7 +13,6 @@ const IndexPage = () => (
       </h1>
     </section>
     <section className="mb-p8">
-      <Blob color="#E5F8FF" />
       <h2 className="my-p4 font-medium z-10 relative text-center" id="projects">
         Projects
       </h2>
@@ -106,7 +105,6 @@ const IndexPage = () => (
       </ul>
     </section>
     <section className="mb-p8">
-      <Blob color="#FFE8FF" />
       <h2 className="my-p4 font-medium z-10 relative text-center" id="projects">
         Newsletter
       </h2>

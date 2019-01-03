@@ -148,7 +148,7 @@ module.exports = {
 
   fonts: {
     sans: [
-      "GT Walsheim Trial",
+      "Phantom Sans",
       "system-ui",
       "BlinkMacSystem Font",
       "-apple-system",
