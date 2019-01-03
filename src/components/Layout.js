@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 
 import Header from "./Header";
 import Footer from "./Footer";
-import "../styles/index.css";
+import "../styles/built.css";
 
 const Layout = ({ children }) => (
   <div className="flex flex-col font-sans min-h-screen text-grey">

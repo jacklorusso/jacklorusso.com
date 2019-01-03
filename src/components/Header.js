@@ -52,7 +52,7 @@ const Header = () => {
 
         <Link
           to="/about"
-          className="block md:inline-block no-underline text-grey"
+          className="block md:inline-block no-underline text-grey md:mr-p1"
         >
           About
         </Link>
@@ -61,7 +61,7 @@ const Header = () => {
           to="/#projects"
           className="block md:inline-block no-underline text-grey"
         >
-          Projects
+          Contact
         </Link>
       </div>
     </nav>

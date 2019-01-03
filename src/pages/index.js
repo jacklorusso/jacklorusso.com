@@ -8,8 +8,7 @@ const IndexPage = () => (
   <Layout>
     <section className="my-p8 mx-p4 flex justify-center items-center">
       <h1 className="text-xl md:text-2xl font-medium leading-normal text-center">
-        Jack Lo Russo is a Design Engineer based in Sydney, but he's{" "}
-        <A href="#">currently in Turkey.</A>
+        A designer who codes.<br />A developer who designs.
       </h1>
     </section>
     <section className="mb-p8">
