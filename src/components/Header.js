@@ -32,7 +32,7 @@ const Header = () => {
         </svg>
       </Link>
 
-      <button
+      {/* <button
         className="block md:hidden flex items-center rounded text-grey"
         onClick={handleClick}
       >
@@ -63,7 +63,7 @@ const Header = () => {
         >
           Contact
         </Link>
-      </div>
+      </div> */}
     </nav>
   );
 };

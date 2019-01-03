@@ -48,7 +48,7 @@ const Footer = () => (
       </svg>
     </a>
     <a
-      href="https://instagram.com/lol_russo"
+      href="https://linkedin.com/in/jacklorusso"
       className="no-underline text-grey"
     >
       <svg

@@ -1388,7 +1388,7 @@ button,
 }
 
 .font-light {
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .font-normal {
@@ -1404,7 +1404,7 @@ button,
 }
 
 .hover\:font-light:hover {
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .hover\:font-normal:hover {
@@ -5821,10 +5821,14 @@ button,
   z-index: auto;
 }
 
+body {
+  font-weight: 100;
+}
+
 hr {
   width: 15%;
   border: 0;
-  border-top: 3px solid #424242;
+  border-top: 2px solid #424242;
   margin: 2.5em auto 2.3em;
 }
 
@@ -6577,7 +6581,7 @@ hr {
   }
 
   .sm\:font-light {
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .sm\:font-normal {
@@ -6593,7 +6597,7 @@ hr {
   }
 
   .sm\:hover\:font-light:hover {
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .sm\:hover\:font-normal:hover {
@@ -11752,7 +11756,7 @@ hr {
   }
 
   .md\:font-light {
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .md\:font-normal {
@@ -11768,7 +11772,7 @@ hr {
   }
 
   .md\:hover\:font-light:hover {
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .md\:hover\:font-normal:hover {
@@ -16927,7 +16931,7 @@ hr {
   }
 
   .lg\:font-light {
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .lg\:font-normal {
@@ -16943,7 +16947,7 @@ hr {
   }
 
   .lg\:hover\:font-light:hover {
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .lg\:hover\:font-normal:hover {
@@ -22102,7 +22106,7 @@ hr {
   }
 
   .xl\:font-light {
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .xl\:font-normal {
@@ -22118,7 +22122,7 @@ hr {
   }
 
   .xl\:hover\:font-light:hover {
-    font-weight: 300;
+    font-weight: 100;
   }
 
   .xl\:hover\:font-normal:hover {
