@@ -1,44 +1,4 @@
 /*
-Galaxie Copernicus
-*/
-
-@font-face {
-  src: url("fonts/Copernicus-BookItalic.eot"); /* IE < 9 */
-  src: url("fonts/Copernicus-BookItalic.eot?#") format("embedded-opentype"),
-    /* IE 9 */ url("fonts/Copernicus-BookItalic.woff") format("woff");
-  font-family: "Copernicus";
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("fonts/Copernicus-Book.eot"); /* IE < 9 */
-  src: url("fonts/Copernicus-Book.eot?#") format("embedded-opentype"),
-    /* IE 9 */ url("fonts/Copernicus-Book.woff") format("woff");
-  font-family: "Copernicus";
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  src: url("fonts/Copernicus-SemiboldItalic.eot"); /* IE < 9 */
-  src: url("fonts/Copernicus-SemiboldItalic.eot") format("embedded-opentype"),
-    /* IE 9 */ url("fonts/Copernicus-SemiboldItalic.woff") format("woff");
-  font-family: "Copernicus";
-  font-style: italic;
-  font-weight: 500;
-}
-
-@font-face {
-  src: url("fonts/Copernicus-Semibold.eot"); /* IE < 9 */
-  src: url("fonts/Copernicus-Semibold.eot") format("embedded-opentype"),
-    /* IE 9 */ url("fonts/Copernicus-Semibold.woff") format("woff");
-  font-family: "Copernicus";
-  font-style: normal;
-  font-weight: 500;
-}
-
-/*
 Phantom Sans
 */
 
