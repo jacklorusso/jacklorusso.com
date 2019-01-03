@@ -1,11 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
-
-import Section from "../components/Section";
-import Hero from "../components/Hero";
 import Box from "../components/Box";
-
-import "../styles/built.css";
+import A from "../components/A";
+import Blob from "../components/Blob";
 
 const IndexPage = () => (
   <Layout>
@@ -77,11 +74,12 @@ const IndexPage = () => (
           </a>
         </Box>
       </div>
-    </Section> */}
-    <Section>
-      <h2 className="font-medium my-p5" id="writing">
+    </section>
+    <section className="text-center mb-p7">
+      <h2 className="font-medium" id="writing">
         Writing
       </h2>
+      <hr />
 
       <ul className="list-reset">
         <li className="my-p3 text-2xl">
@@ -98,9 +96,10 @@ const IndexPage = () => (
           </A>
         </li>
       </ul>
-    </Section>
-    <Section>
+    </section>
+    <section className="text-center my-p7" id="speaking">
       <h2 className="font-medium">Speaking</h2>
+      <hr />
 
       <ul className="list-reset">
         <li className="my-p3 text-2xl">

@@ -11,27 +11,25 @@ const Header = () => {
   };
 
   return (
-    <header className="md:px-0 flex flex-wrap items-center justify-between font-normal ">
-      <Link
-        to="/"
-        className="text-foreground-faded nav-link hover:bg-background"
-      >
-        {/* <svg
+    <nav className="flex flex-wrap items-center justify-between p-p2 max-w-p15 mx-auto w-full">
+      <Link to="/" className="flex items-center no-underline text-grey">
+        <svg
+          className="stroke-current"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          className="w-p3"
+          width="36"
+          height="30"
+          viewBox="0 0 312 252"
         >
           <path
             fill="none"
-            stroke="#424242"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".803"
-            d="M3.2,0.96 L14.2,0.96 L14.2,16.36 L3.2,16.36 L3.2,0.96 M6.5,4.26 L17.5,4.26 L17.5,19.66 L6.5,19.66 L6.5,4.26 M9.8,7.56 L20.8,7.56 L20.8,22.96 L9.8,22.96 L9.8,7.56"
-            transform="rotate(90 12 11.96)"
-          />
-        </svg> */}
-        Jack Lo Russo
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="11"
+            d="M0,0 L150,0 L150,210 L0,210 L0,0 M45,45 L195,45 L195,255 L45,255 L45,45 M90,90 L240,90 L240,300 L90,300 L90,90"
+            transform="rotate(90 150 156)"
+          />{" "}
+          // stroke="#000000"
+        </svg>
       </Link>
 
       {/* <button
@@ -47,10 +45,11 @@ const Header = () => {
       >
         <Link
           to="/"
-          className="block md:inline-block no-underline text-foreground-faded md:mr-p1 nav-link"
+          className="block md:inline-block no-underline text-grey md:mr-p1"
         >
           Home
         </Link>
+
         <Link
           to="/about"
           className="block md:inline-block no-underline text-grey md:mr-p1"

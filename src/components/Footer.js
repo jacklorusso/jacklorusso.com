@@ -1,13 +1,5 @@
 import React from "react";
 
-import ThemeSwitch from "./ThemeSwitch";
-
-const SocialLink = props => (
-  <a href={props.href} className="text-inherit nav-link m-p1">
-    {props.children}
-  </a>
-);
-
 const Footer = () => (
   <footer className="pb-p2 max-w-p15 mx-auto w-full text-sm text-center">
     <a
@@ -17,7 +9,7 @@ const Footer = () => (
       <svg
         aria-labelledby="github-icon"
         role="img"
-        className="fill-current w-p2"
+        className="fill-current w-p2 mr-p1"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -31,7 +23,7 @@ const Footer = () => (
     >
       <svg
         aria-labelledby="twitter-icon"
-        className="fill-current w-p2"
+        className="fill-current w-p2 mr-p1"
         width="18"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +38,7 @@ const Footer = () => (
     >
       <svg
         aria-labelledby="instagram-icon"
-        className="fill-current w-p2"
+        className="fill-current w-p2 mr-p1"
         role="img"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
