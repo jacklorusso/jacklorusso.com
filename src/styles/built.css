@@ -1,5 +1,6 @@
 @import "fonts.css";
 
+<<<<<<< HEAD:src/styles/built.css
 :root {
   /* colors */
   --background: #fff;
@@ -42,6 +43,8 @@
   --scale-p16: calc(var(--scale-p15) * var(--scale-ratio));
 }
 
+=======
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -1509,7 +1512,15 @@ button,
   font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
+<<<<<<< HEAD:src/styles/built.css
 .font-400 {
+=======
+.font-light {
+  font-weight: 100;
+}
+
+.font-normal {
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
   font-weight: 400;
 }
 
@@ -1521,6 +1532,7 @@ button,
   font-weight: 600;
 }
 
+<<<<<<< HEAD:src/styles/built.css
 .font-700 {
   font-weight: 700;
 }
@@ -1531,6 +1543,10 @@ button,
 
 .font-900 {
   font-weight: 900;
+=======
+.hover\:font-light:hover {
+  font-weight: 100;
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
 }
 
 .hover\:font-400:hover {
@@ -6301,6 +6317,7 @@ button,
   z-index: auto;
 }
 
+<<<<<<< HEAD:src/styles/built.css
 html {
   background: var(--background);
   margin: 2em;
@@ -6332,11 +6349,16 @@ a {
 
 a:hover {
   color: var(--accent-primary);
+=======
+body {
+  font-weight: 100;
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
 }
 
 hr {
   width: 15%;
   border: 0;
+<<<<<<< HEAD:src/styles/built.css
   border-top: 3px solid var(--accent-secondary);
 }
 
@@ -6346,6 +6368,10 @@ hr {
   transition: none;
   border-bottom: none;
   box-shadow: none;
+=======
+  border-top: 2px solid #424242;
+  margin: 2.5em auto 2.3em;
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
 }
 
 @media (min-width: 576px) {
@@ -7176,7 +7202,15 @@ hr {
     font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
+<<<<<<< HEAD:src/styles/built.css
   .sm\:font-400 {
+=======
+  .sm\:font-light {
+    font-weight: 100;
+  }
+
+  .sm\:font-normal {
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
     font-weight: 400;
   }
 
@@ -7188,8 +7222,13 @@ hr {
     font-weight: 600;
   }
 
+<<<<<<< HEAD:src/styles/built.css
   .sm\:font-700 {
     font-weight: 700;
+=======
+  .sm\:hover\:font-light:hover {
+    font-weight: 100;
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
   }
 
   .sm\:font-800 {
@@ -12789,7 +12828,15 @@ hr {
     font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
+<<<<<<< HEAD:src/styles/built.css
   .md\:font-400 {
+=======
+  .md\:font-light {
+    font-weight: 100;
+  }
+
+  .md\:font-normal {
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
     font-weight: 400;
   }
 
@@ -12801,6 +12848,7 @@ hr {
     font-weight: 600;
   }
 
+<<<<<<< HEAD:src/styles/built.css
   .md\:font-700 {
     font-weight: 700;
   }
@@ -12811,6 +12859,10 @@ hr {
 
   .md\:font-900 {
     font-weight: 900;
+=======
+  .md\:hover\:font-light:hover {
+    font-weight: 100;
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
   }
 
   .md\:hover\:font-400:hover {
@@ -18402,7 +18454,15 @@ hr {
     font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
+<<<<<<< HEAD:src/styles/built.css
   .lg\:font-400 {
+=======
+  .lg\:font-light {
+    font-weight: 100;
+  }
+
+  .lg\:font-normal {
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
     font-weight: 400;
   }
 
@@ -18414,12 +18474,17 @@ hr {
     font-weight: 600;
   }
 
+<<<<<<< HEAD:src/styles/built.css
   .lg\:font-700 {
     font-weight: 700;
   }
 
   .lg\:font-800 {
     font-weight: 800;
+=======
+  .lg\:hover\:font-light:hover {
+    font-weight: 100;
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
   }
 
   .lg\:font-900 {
@@ -24015,7 +24080,15 @@ hr {
     font-family: IBM Plex Mono, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
+<<<<<<< HEAD:src/styles/built.css
   .xl\:font-400 {
+=======
+  .xl\:font-light {
+    font-weight: 100;
+  }
+
+  .xl\:font-normal {
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
     font-weight: 400;
   }
 
@@ -24027,12 +24100,17 @@ hr {
     font-weight: 600;
   }
 
+<<<<<<< HEAD:src/styles/built.css
   .xl\:font-700 {
     font-weight: 700;
   }
 
   .xl\:font-800 {
     font-weight: 800;
+=======
+  .xl\:hover\:font-light:hover {
+    font-weight: 100;
+>>>>>>> 64dae21f945190cccc3666fb47fb1d31ad256373:src/styles/built.css
   }
 
   .xl\:font-900 {

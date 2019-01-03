@@ -9,62 +9,72 @@ import "../styles/built.css";
 
 const IndexPage = () => (
   <Layout>
-    <Hero />
-
-    <Section>
-      <h2 className="mt-p2 mb-p3 font-medium" id="projects">
-        Projects (coming soon)
+    <section className="my-p8 mx-p4 text-center">
+      <h1 className="text-3xl md:text-4xl font-medium leading-title ">
+        A designer who codes.<br />A developer who designs.
+      </h1>
+      <p className="text-xl mt-p6">
+        Jack Lo Russo is a Design Technologist from Sydney.
+      </p>
+    </section>
+    <section>
+      <p />
+    </section>
+    <section className="mb-p8">
+      <h2 className="my-p4 font-medium z-10 relative text-center" id="projects">
+        Projects
       </h2>
-      <div className="box-grid flex items-start justify-start flex-wrap">
-        <Box color="primary">
-          <a href="https://designsystems.email" className=" no-underline">
-            <h3 className="font-medium mb-m2">design systems digest</h3>
-            <p className="">
-              a curated newsletter about design systems & front-end architecture
+      <hr className="relative" />
+      <div className="flex items-start justify-center flex-wrap relative">
+        <Box>
+          <a
+            href="https://www.ninetyninedays.com.au/"
+            className="no-underline text-grey"
+          >
+            <h3 className="font-medium text-center mb-m2">ninety-nine days</h3>
+            <p className="font-light text-center">
+              a travel and lifestyle blog, designed and built from scratch using
+              React, Gatsby, Netlify-CMS and&nbsp;Tachyons
             </p>
           </a>
         </Box>
-        <Box color="primary">
-          <h3 className="font-medium mb-m2">hello, world</h3>
-          <p className="">
-            an experiment using Mapbox and GeoJSON to put my best travel photos
-            in context
-          </p>
-        </Box>
-        <Box color="primary">
-          <h3 className="font-medium mb-m2">trak</h3>
-          <p className="">a CLI time tracker written in Go</p>
-        </Box>
-        <Box color="primary">
-          <h3 className="font-medium mb-m2">dotsandcrosses</h3>
-          <p className="">
-            a customisable journal app optimised for habit tracking
-          </p>
-        </Box>
-        <Box color="primary">
-          <h3 className="font-medium mb-m2">nootab</h3>
-          <p className="">
-            a browser extension that turns your new tab into a scratchpad
-          </p>
-        </Box>
-      </div>
-    </Section>
-    {/* <Section>
-      <h2 className="mt-p2 mb-p3 font-medium" id="projects">
-        Work
-      </h2>
-      <div className="box-grid flex items-center justify-center md:justify-start flex-wrap">
-        <Box color="secondary">
-          <h3 className="font-medium mb-m2">
-            Rebranding for the next growth phase
+
+        <Box>
+          <h3 className="font-medium text-center mb-m2">
+            nootab (launching soon)
           </h3>
-          <p className="">How we built</p>
+          <p className="font-light text-center">
+            a browser extension that turns your new tab into a scratchpad using
+            LocalStorage&nbsp;APIs
+          </p>
         </Box>
-        <Box color="secondary">
-          <h3 className="font-medium mb-m2">Building a</h3>
+
+        <Box>
+          <a
+            href="https://twitter.com/helveticabot"
+            className="no-underline text-grey"
+          >
+            <h3 className="font-medium text-center mb-m2">Helvetica Bot</h3>
+            <p className="font-light text-center">
+              a Twitter bot that sources content from Wikipedia and generates
+              occasionally hilarious&nbsp;designs
+            </p>
+          </a>
         </Box>
-        <Box color="secondary">
-          <h3 className="font-medium mb-m2">Launching an MVP</h3>
+
+        <Box>
+          <a
+            href="https://designsystems.email/"
+            className="no-underline text-grey"
+          >
+            <h3 className="font-medium text-center mb-m2">
+              Design Systems Digest
+            </h3>
+            <p className="font-light text-center">
+              a curated newsletter covering design systems, styleguides &
+              front-end architecture<br />(over 300&nbsp;subscribers)
+            </p>
+          </a>
         </Box>
       </div>
     </Section> */}
@@ -73,28 +83,19 @@ const IndexPage = () => (
         Writing
       </h2>
 
-      <ul className="list-reset font-regular">
-        {/* <li className="my-p3 text-2xl">
-          <A>Getting started with Accessibility</A>
+      <ul className="list-reset">
+        <li className="my-p3 text-2xl">
+          <A>Travel, growth & gratitude: 2018 in review</A>
         </li>
         <li className="my-p3 text-2xl">
-          <A>I learnt React before I learnt JavaScript</A>
-        </li>
-        <li className="my-p3 text-2xl">
-          <A>About this site</A>
-        </li>
-        <li className="my-p3 text-2xl">
-          <A>Design is a process, not a job title</A>
-        </li> */}
-        <li className="my-p3 text-2xl">
-          <a href="https://medium.com/@lol_russo/8-things-that-cssconf-and-jsconf-au-got-really-really-right-cf514ed4a6f7">
+          <A href="https://medium.com/@lol_russo/8-things-that-cssconf-and-jsconf-au-got-really-really-right-cf514ed4a6f7">
             8 things that CSS / JS Conf AU got really, really right
-          </a>
+          </A>
         </li>
         <li className="my-p3 text-2xl">
-          <a href="https://medium.com/@lol_russo/on-perfectionism-7ac65fe36c99">
+          <A href="https://medium.com/@lol_russo/on-perfectionism-7ac65fe36c99">
             On perfectionism
-          </a>
+          </A>
         </li>
       </ul>
     </Section>
@@ -104,21 +105,20 @@ const IndexPage = () => (
       <ul className="list-reset">
         <li className="my-p3 text-2xl">
           Inspecting the Accessibility Inspector
-          <p className="text-base  mt-base">
-            A11y Bytes Sydney, Global Accessibility Awareness Day — May 2018
+          <p className="text-lg font-light mt-base">
+            A11y Bytes Sydney on Global Accessibility Awareness Day, April 2018
           </p>
         </li>
         <li className="my-p3 text-2xl">
-          <a href="https://www.youtube.com/watch?v=t1_tA2CqcMw&t=5s">
+          <A href="https://www.youtube.com/watch?v=t1_tA2CqcMw" className="">
             Design Systems for Small Teams
-          </a>
-
-          <p className="text-base  mt-base">
-            Design System Sydney meetup — February 2018
-          </p>
+            <p className="text-lg font-light mt-base">
+              Design System Sydney Meetup, February 2018
+            </p>
+          </A>
         </li>
       </ul>
-    </Section>
+    </section>
   </Layout>
 );
 

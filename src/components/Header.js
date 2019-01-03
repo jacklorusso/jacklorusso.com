@@ -34,8 +34,8 @@ const Header = () => {
         Jack Lo Russo
       </Link>
 
-      <button
-        className="block md:hidden text-foreground-faded p-base font-normal"
+      {/* <button
+        className="block md:hidden flex items-center rounded text-grey"
         onClick={handleClick}
       >
         Menu
@@ -53,12 +53,19 @@ const Header = () => {
         </Link>
         <Link
           to="/about"
-          className="block md:inline-block no-underline text-foreground-faded md:mr-p1 nav-link"
+          className="block md:inline-block no-underline text-grey md:mr-p1"
         >
           About
         </Link>
-      </div>
-    </header>
+
+        <Link
+          to="/#projects"
+          className="block md:inline-block no-underline text-grey"
+        >
+          Contact
+        </Link>
+      </div> */}
+    </nav>
   );
 };
 

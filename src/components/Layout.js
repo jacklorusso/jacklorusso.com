@@ -5,6 +5,7 @@ import Helmet from "react-helmet";
 import jlogo from "../images/jlogo32x32.png";
 import Header from "./Header";
 import Footer from "./Footer";
+import "../styles/built.css";
 
 const Layout = ({ children }) => (
   <div className="font-sans grid-container">
