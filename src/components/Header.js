@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <header className="px-base md:px-0 flex flex-wrap items-center justify-between max-w-p15 py-m2 mx-auto font-normal ">
+    <header className="md:px-0 flex flex-wrap items-center justify-between font-normal ">
       <Link
         to="/"
         className="text-foreground-faded nav-link hover:bg-background"

@@ -9,7 +9,7 @@ const SocialLink = props => (
 );
 
 const Footer = () => (
-  <footer className="flex justify-center items-center mt-p2">
+  <footer className="flex justify-end items-center mt-p2">
     <SocialLink href="https://github.com/lol-russo">GitHub</SocialLink>
     <SocialLink href="https://twitter.com/lol_russo">Twitter</SocialLink>
     <SocialLink href="https://instagram.com/lol_russo">Instagram</SocialLink>

@@ -7,7 +7,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => (
-  <div className="font-sans  text-inherit">
+  <div className="font-sans grid-container">
     <Helmet
       title="Jack Lo Russo"
       meta={[

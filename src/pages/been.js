@@ -7,7 +7,7 @@ const AboutPage = () => (
   <Layout>
     <div className="my-p7">
       <h1 className="my-p5 text-lg md:text-xl max-w-p14 mx-auto text-center">
-        The places I've been to are highlighted.
+        ,
         <br />
         Everything else is on my list.
       </h1>

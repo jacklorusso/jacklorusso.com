@@ -87,7 +87,8 @@ let colors = {
   "lightness-40": "var(--lightness-40)",
   "lightness-20": "var(--lightness-20)",
   primary: "var(--accent-primary)",
-  secondary: "var(--accent-secondary)"
+  secondary: "var(--accent-secondary)",
+  tertiary: "var(--accent-tertiary)"
 };
 
 module.exports = {
