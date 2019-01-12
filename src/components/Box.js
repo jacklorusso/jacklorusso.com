@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Box = props => {
   return (
-    <div className="bg-white shadow-box p-p2 m-p2 max-w-p10 w-full min-h-p10">
+    <div className="bg-white shadow-box p-p2 m-p1 max-w-p10 w-full min-h-p10">
       {props.children}
     </div>
   );

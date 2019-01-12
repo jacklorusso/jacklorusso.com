@@ -2,27 +2,31 @@ import React from "react";
 import Layout from "../components/Layout";
 import Box from "../components/Box";
 import A from "../components/A";
-import Blob from "../components/Blob";
 
 const IndexPage = () => (
   <Layout>
-    <section className="my-p8 mx-p4 text-center">
-      <h1 className="text-3xl md:text-4xl font-medium leading-title ">
+    <section className="my-p8:ns my-p7 ml-p4:ns ml-p1 mr-p2 text-left">
+      <h1 className="text-2xl md:text-4xl font-medium leading-title ">
         A designer who codes.<br />A developer who designs.
       </h1>
-      <p className="text-xl mt-p6">
-        Jack Lo Russo is a Design Technologist from Sydney.
+      <p className="text-xl mt-p6">Jack Lo Russo builds products in Sydney.</p>
+      <p className="text-xl mt-base">
+        <a
+          href="mailto:jack.lorusso@gmail.com"
+          className="no-underline text-grey"
+        >
+          Let's talk about building yours.
+        </a>
       </p>
     </section>
     <section>
       <p />
     </section>
-    <section className="mb-p8">
-      <h2 className="my-p4 font-medium z-10 relative text-center" id="projects">
+    <section className="mb-p7 ml-p4:ns ml-p1 mr-p1">
+      <h2 className="my-p4 font-medium z-10 relative text-left" id="projects">
         Projects
       </h2>
-      <hr className="relative" />
-      <div className="flex items-start justify-center flex-wrap relative">
+      <div className="flex items-start justify-start flex-wrap relative">
         <Box>
           <a
             href="https://www.ninetyninedays.com.au/"
@@ -75,11 +79,10 @@ const IndexPage = () => (
         </Box>
       </div>
     </section>
-    <section className="text-center mb-p7">
+    <section className="mb-p4 ml-p4:ns ml-p1 mr-p1">
       <h2 className="font-medium" id="writing">
         Writing
       </h2>
-      <hr />
 
       <ul className="list-reset">
         <li className="my-p3 text-2xl">
@@ -97,22 +100,22 @@ const IndexPage = () => (
         </li>
       </ul>
     </section>
-    <section className="text-center my-p7" id="speaking">
+    <section className="my-p4 ml-p4:ns ml-p1 mr-p1" id="speaking">
       <h2 className="font-medium">Speaking</h2>
-      <hr />
 
       <ul className="list-reset">
         <li className="my-p3 text-2xl">
           Inspecting the Accessibility Inspector
           <p className="text-lg font-light mt-base">
-            A11y Bytes Sydney on Global Accessibility Awareness Day, April 2018
+            A11y Bytes Sydney on Global Accessibility Awareness Day,
+            April&nbsp;2018
           </p>
         </li>
         <li className="my-p3 text-2xl">
           <A href="https://www.youtube.com/watch?v=t1_tA2CqcMw" className="">
             Design Systems for Small Teams
             <p className="text-lg font-light mt-base">
-              Design System Sydney Meetup, February 2018
+              Design System Sydney Meetup, February&nbsp;2018
             </p>
           </A>
         </li>

@@ -11,7 +11,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-p2 max-w-p15 mx-auto w-full">
+    <nav className="flex flex-wrap items-center justify-between p-p4:ns p-p2 max-w-p15 mx-auto w-full">
       <Link to="/" className="flex items-center no-underline text-grey">
         <svg
           className="stroke-current"

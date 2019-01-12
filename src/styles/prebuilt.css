@@ -13,5 +13,6 @@ hr {
   width: 15%;
   border: 0;
   border-top: 2px solid #424242;
-  margin: 2.5em auto 2.3em;
+  text-align: left;
+  /* margin: 2.5em auto 2.3em; */
 }

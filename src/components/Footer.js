@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => (
-  <footer className="pb-p2 max-w-p15 mx-auto w-full text-sm text-center">
+  <footer className="pb-p2 max-w-p15 ml-p8:ns w-full mx-auto text-sm text-left">
     <a
       href="https://github.com/lol-russo"
       className="no-underline text-grey mr-base"
@@ -9,7 +9,7 @@ const Footer = () => (
       <svg
         aria-labelledby="github-icon"
         role="img"
-        className="fill-current w-p2 mr-p1"
+        className="fill-current w-p2 ml-p2 mr-p1"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
       >
