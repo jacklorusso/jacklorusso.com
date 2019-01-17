@@ -15,7 +15,7 @@ const IndexPage = () => (
           href="mailto:jack.lorusso@gmail.com"
           className="no-underline text-grey"
         >
-          Let's talk about building yours.
+          Let’s talk about building yours.
         </a>
       </p>
     </section>
@@ -86,7 +86,7 @@ const IndexPage = () => (
 
       <ul className="list-reset">
         <li className="my-p3 text-2xl">
-          <A>Travel, growth & gratitude: 2018 in review</A>
+          <A href="https://medium.com/@lol_russo/travel-growth-gratitude-2018-in-review-504ac4a0c3a6">Travel, growth & gratitude: 2018 in review</A>
         </li>
         <li className="my-p3 text-2xl">
           <A href="https://medium.com/@lol_russo/8-things-that-cssconf-and-jsconf-au-got-really-really-right-cf514ed4a6f7">
